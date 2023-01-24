@@ -5,46 +5,60 @@ import Type from "./Type";
 import ContactForm from '../ContactForm'
 
 function Home() {
+
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
-          <Row>
-          <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
+          <Row xs={1} md={2}>
+            <Col >
+              <img 
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{  maxWidth:"500px" }}
               />
             </Col>
-
-            <Col md={7} className="home-header">
-
-              <h1 className="heading-name">
-                Hi, I'm
-                <strong className="main-name"> Alexandra Salas</strong><div style={{ fontSize: 24, padding: "10px 0px 10px 127px"}}>
-                <Type />
-              </div>
-              </h1>
-
-              
-              <h5 style={{ padding: "0px 50px", textAlign:"center"}}>
-              Passionate about creating innovative, purposeful, and creative solutions. I build things to make a difference.
-              </h5>
-              
+            <Col className="home-header">
+              <Row>
+                <Col md={4}>
+                  <h1 className="heading-name">
+                    Hi, I'm
+                  </h1>
+                </Col>
+              </Row>
+              <Row>
+                <Col style={{ padding: "25px 0px"}}>
+                  <h1 className="heading-name">
+                    <strong className="main-name"> 
+                      Alexandra Salas
+                    </strong>  
+                  </h1>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={{ span: 8, offset: 2 }}>
+                  <h2><Type /></h2>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="home-header">
+                  <h3>
+                  Passionate about building innovative,
+                   purposeful, and creative solutions.
+                  </h3>
+                </Col>
+              </Row>
             </Col>
-
-            
           </Row>
-          
         </Container>
       </Container>
-        <Col md={12} className="home-about-social">
-            <h1>CONNECT WITH ME</h1>
-            <ContactForm />
+      <div className="home-contact">
+        <Col md={{ span: 6, offset: 3 }} className="home-about-social">
+            <h1>Reach out!</h1>
+            <ContactForm/>
         </Col>
-
+      </div>
     </section>
   );
 }

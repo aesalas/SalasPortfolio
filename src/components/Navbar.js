@@ -6,12 +6,17 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { AiOutlineMail } from "react-icons/ai";
-import Popup from './Popup';
-import ContactForm from './ContactForm.js';
+import Modal from 'react-bootstrap/Modal';
+import ContactForm from "./ContactForm";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -21,9 +26,11 @@ function NavBar() {
     }
   }
 
+  
   window.addEventListener("scroll", scrollHandler);
 
   return (
+    <div>
     <Navbar
       expanded={expand}
       fixed="top"
@@ -81,21 +88,37 @@ function NavBar() {
 
             
 
-            <Nav.Item className="connect-btn">
-          
-              <Button
+            <Nav.Item className="connect-btn" >
+            
+              <Button 
                 className="connect-btn-inner"
-                href="/"
-              >
-                <AiOutlineMail style={{ fontSize: "1.2em" }} />
-                
-              </Button>
+                onClick={handleShow}
+                >
 
-            </Nav.Item>
+                <AiOutlineMail style={{ fontSize: "1.2em" }} />
+              </Button>
+              
+           </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+       <Modal 
+          className="contact-mod"
+          show={show} 
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          onHide={handleClose}>
+        <Modal.Header closeButton className="contact-header">
+          <Modal.Title>
+            <h1>Contact Me!</h1>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ContactForm/>
+        </Modal.Body>
+      </Modal>
+  </div>
   );
 }
 
