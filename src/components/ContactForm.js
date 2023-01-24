@@ -66,7 +66,7 @@ function ContactForm() {
         <Col>
           {/* <!-- contact form --> */}
           <div className="contact">
-            <Form ref={form} onSubmit={sendEmail}>
+            <Form ref={form} onSubmit={sendEmail} netlify>
               <Form.Field
                 id='name'
                 control={Input}
