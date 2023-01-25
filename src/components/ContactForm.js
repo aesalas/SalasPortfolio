@@ -6,6 +6,10 @@ import Button from "react-bootstrap/Button";
 import { Form, Input, TextArea } from 'semantic-ui-react';
 import Alert from 'react-bootstrap/Alert';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
+}
 
 
 function ContactForm() { 
@@ -43,12 +47,6 @@ function ContactForm() {
       );
     }
     
-    const encode = (data) => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
-}
-
-export default function Form (){
   const [state, setState] = useState({name: '', email: '', message: '' })
 
   const handleChange = e =>
