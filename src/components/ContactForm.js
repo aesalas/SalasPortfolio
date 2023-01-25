@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
@@ -27,7 +26,7 @@ function ContactForm() {
           </p>
         </Alert>
       );
-      
+
     } 
     if (show && !emSent) {
       return (
@@ -44,13 +43,35 @@ function ContactForm() {
       );
     }
     
-    
-   useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
-      setEmSent(true);
-    }
-    setShow(true);
-  }, []);
+    const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
+}
+
+export default function Form (){
+  const [state, setState] = useState({name: '', email: '', message: '' })
+
+  const handleChange = e =>
+    setState({...state, [e.target.name]: e.target.value })
+
+  const handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contactForm', ...state })
+    })
+      .then((result) => {
+          console.log(result.text);
+          setEmSent(true);
+          setShow(true);
+
+        }, (error) => {
+          console.log(error.text);
+          setEmSent(false);
+          setShow(true);
+        });
+      e.preventDefault()
+    };
 
   return (
     <Container >
@@ -58,26 +79,43 @@ function ContactForm() {
         <Col>
           {/* <!-- contact form --> */}
           <div className="contact">
-            <form 
-                name="contact" 
-                method="POST" 
-                action="/contact/?success=true"
-                data-netlify="true" 
-                >
-            <input type="hidden" name="form-name" value="contact" />
-              <TextArea id="standard-basic" label="name" name="name" /> <br />
-              <TextArea id="standard-basic" label="email" name="email" /> <br />
-              <TextArea
-                multiline
-                id="standard-multiline-static"
-                label="message"
-                name="message"
+            <Form ref={form} onSubmit={handleSubmit}>
+              <Form.Field
+                id='name'
+                control={Input}
+                label='Name'
+                name='name'
+                placeholder='Name…'
+                required
+                icon='user circle'
+                iconPosition='left'
               />
-              <br />
-              <div>
-                <Button type="submit">Send</Button>
+              <Form.Field
+                id='Email'
+                control={Input}
+                label='Email'
+                name='email'
+                placeholder='Email…'
+                required
+                icon='mail'
+                iconPosition='left'
+              />
+
+              <Form.Field
+                id='message'
+                control={TextArea}
+                label='Message'
+                name='message'
+                placeholder='Message…'
+                required
+              />
+              <div className="submit-btn">
+              <Button
+                variant="primary"
+                target="_blank"
+                style={{ maxWidth: "250px" }}> Submit </Button>
               </div>
-            </form>
+            </Form>
           </div>
         </Col>
       </Row>
