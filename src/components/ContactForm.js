@@ -43,22 +43,14 @@ function ContactForm() {
         </Alert>
       );
     }
-    const sendEmail = (e) => {
-      e.preventDefault();
-
-      emailjs.sendForm('service_dpkpiyd', 'template_vg7lyf7', e.target, 'xIGNAR0gHYEXzl1pb')
-        .then((result) => {
-          console.log(result.text);
-          setEmSent(true);
-          setShow(true);
-
-        }, (error) => {
-          console.log(error.text);
-          setEmSent(false);
-          setShow(true);
-        });
-      e.target.reset()
-    };
+    
+    
+   useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+      setEmSent(true);
+    }
+    setShow(true);
+  }, []);
 
   return (
     <Container >
@@ -66,44 +58,26 @@ function ContactForm() {
         <Col>
           {/* <!-- contact form --> */}
           <div className="contact">
-            <Form ref={form} onSubmit={sendEmail} netlify>
-              <Form.Field
-                id='name'
-                control={Input}
-                label='Name'
-                name='name'
-                placeholder='Name…'
-                required
-                icon='user circle'
-                iconPosition='left'
+            <form 
+                name="contact" 
+                method="POST" 
+                action="/contact/?success=true"
+                data-netlify="true" 
+                >
+            <input type="hidden" name="form-name" value="contact" />
+              <TextArea id="standard-basic" label="name" name="name" /> <br />
+              <TextArea id="standard-basic" label="email" name="email" /> <br />
+              <TextArea
+                multiline
+                id="standard-multiline-static"
+                label="message"
+                name="message"
               />
-              <Form.Field
-                id='Email'
-                control={Input}
-                label='Email'
-                name='email'
-                placeholder='Email…'
-                required
-                icon='mail'
-                iconPosition='left'
-              />
-              
-              <Form.Field
-                id='message'
-                control={TextArea}
-                label='Message'
-                name='message'
-                placeholder='Message…'
-                required
-              />
-              <div className="submit-btn">
-              <Button
-                variant="primary"
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >Submit</Button>
+              <br />
+              <div>
+                <Button type="submit">Send</Button>
               </div>
-            </Form>
+            </form>
           </div>
         </Col>
       </Row>
