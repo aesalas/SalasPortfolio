@@ -1,6 +1,5 @@
 
 import React from "react";
-import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import { Container, Row, Col} from "react-bootstrap";
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
@@ -28,38 +27,21 @@ function ContactForm() {
         <Col>
           {/* <!-- contact form --> */}
           <div className="contact">
-            <Form ref={form} onSubmit={sendEmail}>
-              <Form.Field
-                id='name'
-                control={Input}
-                label='Name'
-                name='name'
-                placeholder='Name…'
-                required
-                icon='user circle'
-                iconPosition='left'
-              />
-              <Form.Field
-                id='Email'
-                control={Input}
-                label='Email'
-                name='email'
-                placeholder='Email…'
-                required
-                icon='mail'
-                iconPosition='left'
-              />
-              
-              <Form.Field
-                id='message'
-                control={TextArea}
-                label='Message'
-                name='message'
-                placeholder='Message…'
-                required
-              />
+            form name="contact" method="post">
+              <p>
+                <label htmlFor="name">Name</label> <br />
+                <input type="text" id="name" name="name" required />
+              </p>
+              <p>
+                <label htmlFor="email">Email</label> <br />
+                <input type="email" id="email" name="email" required />
+              </p>
+              <p>
+                <label htmlFor="message">Message</label> <br />
+                <textarea id="message" name="message" required></textarea>
+              </p>
               <Button type='submit'>Submit</Button>
-            </Form>
+            </form>
           </div>
         </Col>
       </Row>
