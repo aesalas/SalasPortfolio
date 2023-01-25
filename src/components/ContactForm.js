@@ -13,10 +13,13 @@ const encode = (data) => {
 
 
 function ContactForm() { 
- const form = useRef();
+    const form = useRef();
+    const [state, setState] = useState({name: '', email: '', message: '' })
+
  {/* <!-- email logic and message sent/failed alert --> */}
     const [show, setShow] = useState(false);
     const [emSent, setEmSent] = useState(false);
+  
 
     if (show && emSent) {
       return (
@@ -47,8 +50,6 @@ function ContactForm() {
       );
     }
     
-  const [state, setState] = useState({name: '', email: '', message: '' })
-
   const handleChange = e =>
     setState({...state, [e.target.name]: e.target.value })
 
