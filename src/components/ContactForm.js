@@ -1,63 +1,40 @@
-import React, { useState } from "react";
-import { useRef } from 'react';
-import { Container, Row, Col} from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { Form, Input, TextArea } from 'semantic-ui-react';
+export default function ContactForm() {
+    const [success, setSuccess] = useState(false);
 
+    useEffect(() => {
+        if (window.location.search.includes('success=true')) {
+            setSuccess(true);
+        }
+    }, []);
 
-
-
-function ContactForm() { 
-
-  return (
-    <Container >
-      <Row>
-        <Col>
-          {/* <!-- contact form --> */}
-          <div className="contact">
-            <Form name="contact" method post>
-              <input type="hidden" name="form-name" value="contact" />
-              <Form.Field
-                id='name'
-                control={Input}
-                label='Name'
-                name='name'
-                placeholder='Name…'
-                required
-                icon='user circle'
-                iconPosition='left'
-              />
-              <Form.Field
-                id='Email'
-                control={Input}
-                label='Email'
-                name='email'
-                placeholder='Email…'
-                required
-                icon='mail'
-                iconPosition='left'
-              />
-
-              <Form.Field
-                id='message'
-                control={TextArea}
-                label='Message'
-                name='message'
-                placeholder='Message…'
-                required
-              />
-              <div className="submit-btn">
-              <Button
-                variant="primary"
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >Submit</Button>
-              </div>
-            </Form>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  );
+    return (
+        <Container maxWidth="sm">
+            <h2>CONTACT</h2>
+            {success && (
+                <p style={{ color: "green" }}>Thanks for your message! </p>
+            )}
+            <Card>
+                <form
+                    name="contact"
+                    method="POST"
+                    action="/contact/?success=true"
+                    data-netlify="true"
+                >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <TextField id="standard-basic" label="name" name="name" /> <br />
+                    <TextField id="standard-basic" label="email" name="email" /> <br />
+                    <TextField
+                        multiline
+                        id="standard-multiline-static"
+                        label="message"
+                        name="message"
+                    />
+                    <br />
+                    <div>
+                        <Button type="submit">Send</Button>
+                    </div>
+                </form>
+            </Card>
+        </Container>
+    );
 }
-export default ContactForm;
