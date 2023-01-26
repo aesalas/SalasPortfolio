@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
+import Button from "react-bootstrap/Button";
 
 
 const Form = () => {
@@ -65,8 +66,7 @@ const Form = () => {
 
     // console.log(errors, formData)
     return (
-        <div >
-            <h1> Sample Form </h1>
+        <div className="contact">
             <form onSubmit={handleSubmit} 
             method='POST' 
             name='contactform' 
@@ -77,7 +77,7 @@ const Form = () => {
                 value='contactForm' />
                 <div className="form-inputs">
                     <label htmlFor="name" className="form-label">
-                        Name
+                        Name: 
                     </label>     
                     <input 
                         type="text" 
@@ -90,7 +90,7 @@ const Form = () => {
                 </div>
                 <div className="form-inputs">
                     <label htmlFor="email" className="form-label">
-                        Email
+                        Email: 
                     </label>     
                     <input 
                         type="email" 
@@ -103,7 +103,7 @@ const Form = () => {
                 </div>
                 <div className="form-inputs">
                     <label htmlFor="message" className="form-label">
-                        Message
+                        Message: 
                     </label>     
                     <textarea  
                         name="message" 
@@ -112,9 +112,9 @@ const Form = () => {
                         value={formData.message} onChange={handleChange} />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                <button type="submit" className="form-input-btn">
+                <Button type="submit" className="form-input-btn">
                     Send
-                </button>
+                </Button>
             </form>
         </div>
 
