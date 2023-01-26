@@ -1,41 +1,38 @@
-import React, { useState, Component } from "react";
-
-export default class Form extends Component{
-  constructor(props){
-    super(props)
-    this.state = { name: '', email: '', message: '' }
-  }
-
-  handleChange = e =>
-    this.setState({ [e.target.name]: e.target.value })
-
-  render() {
-    const { name, email, message } = this.state
-    return (
-      <form className='contactForm' >
-
-        <input 
-          type='text' 
-          name='name' 
-          value={name}
-          placeholder='Enter your name'
-          onChange={this.handleChange} />
-
-        <input 
-          type='email' 
-          name='email' 
-          value={email}
-          placeholder='Enter your email'
-          onChange={this.handleChange} />
-
-        <textarea 
-          name='message' 
-          placeholder='Messaage'
-          value={message}
-          onChange={this.handleChange}></textarea>
-
-        <button type='submit'>Submit</button>
-      </form>
-    )
-  }
+export default function ContactForm() {
+  return (
+    <form name="contact-form" method="post">
+      <div>
+        <label htmlFor="name">Full Name</label> <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Jane Doe"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="email">E-mail</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="doe@example.com"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="message">Message</label> <br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your message here!"
+          required
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" className="submit" value="Send Message" />
+      </div>
+    </form>
+  );
 }
