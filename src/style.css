@@ -266,23 +266,16 @@ button:focus {
   .contact {
     text-align: left;
   }
-  .contactForm{
-    padding: 10px;
-    width: 90%;
-    max-width: 400px;
-    margin: 30px auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .form-inputs p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
   }
-  .contactForm input, textarea{
-    height: 50px;
-    padding-left: 5px;
-    font-size: 18px;
-  }
-  .contactForm textarea{
-    height: 100px;
+
+  .form-label {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
   }
   .submit-btn{
     text-align: center;
