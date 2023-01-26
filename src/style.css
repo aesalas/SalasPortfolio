@@ -263,24 +263,73 @@ button:focus {
 /* ----------------------------------------- */
 /*                 Contact                   */
 /* ----------------------------------------- */
-.contactForm{
-  padding: 10px;
-  width: 90%;
-  max-width: 400px;
-  margin: 30px auto;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.contactForm input, button, textarea{
-  height: 50px;
-  padding-left: 5px;
-  font-size: 18px;
-}
-.contactForm textarea{
-  height: 100px;
-}
+  .contact {
+    text-align: left;
+  }
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .contact .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .contact .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .contact .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .contact .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  .submit-btn{
+    text-align: center;
+  }
   .contact-mod .modal-content {
     background-color: var(--background1);
   }
