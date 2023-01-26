@@ -1,48 +1,52 @@
+import {useState} from 'react'
 
-export default function Form() {
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
+}
+
+export default function Form (){
+  const [state, setState] = useState({name: '', email: '', message: '' })
+
+  const handleChange = e =>
+    setState({...state, [e.target.name]: e.target.value })
+
+  const handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contactForm', ...state })
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error))
+    e.preventDefault()
+  }
+
   return (
-    <div className="contact">
-      <form 
-        method='POST' 
-        name='contactform' 
-        className='contactForm'>
-      <input 
-        type='hidden' 
-        name='form-name'
-        value='contactForm' />
-        <div class="row">
-          <div class="col-25">
-            <label for="name">Name: </label>
-          </div>
-          <div class="col-75">
-            <input 
-                type='text' 
-                name='name' 
-                placeholder='Enter your name' />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="email">Email</label>
-          </div>
-          <div class="col-75">
-            <input 
-                type='email' 
-                name='email' 
-                placeholder='Enter your email' />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Message</label>
-          </div>
-          <div class="col-75">
-            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-          </div>
-        </div>
-        <button type='submit'>Submit</button>
+    <form 
+      className='contactForm' 
+      onSubmit={handleSubmit}>
 
-      </form>
-    </div>
+      <input 
+        type='text' 
+        name='name' 
+        value={state.name}
+        placeholder='Enter your name'
+        onChange={handleChange} />
+
+      <input 
+        type='email' 
+        name='email' 
+        value={state.email}
+        placeholder='Enter your email'
+        onChange={handleChange} />
+
+      <textarea 
+        name='message' 
+        placeholder='Messaage'
+        value={state.message}
+        onChange={handleChange}></textarea>
+      <button type='submit'>Submit</button>
+    </form>
   )
 }
