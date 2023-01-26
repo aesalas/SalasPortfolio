@@ -112,7 +112,7 @@ const Form = () => {
                         value={formData.message} onChange={handleChange} />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                <Button type="submit" className="form-input-btn">
+                <Button type="submit" className="submit-btn">
                     Send
                 </Button>
             </form>
