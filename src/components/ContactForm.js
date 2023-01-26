@@ -1,38 +1,63 @@
-export default function ContactForm() {
+import React, { useState } from "react";
+import { useRef } from 'react';
+import { Container, Row, Col} from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import { Form, Input, TextArea } from 'semantic-ui-react';
+
+
+
+
+function ContactForm() { 
+
   return (
-    <form name="contact-form" method="post">
-      <div>
-        <label htmlFor="name">Full Name</label> <br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Jane Doe"
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="email">E-mail</label> <br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="doe@example.com"
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="message">Message</label> <br />
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Your message here!"
-          required
-        ></textarea>
-      </div>
-      <div>
-        <input type="submit" className="submit" value="Send Message" />
-      </div>
-    </form>
+    <Container >
+      <Row>
+        <Col>
+          {/* <!-- contact form --> */}
+          <div className="contact">
+            <Form name="contact" method post>
+              <input type="hidden" name="form-name" value="contact" />
+              <Form.Field
+                id='name'
+                control={Input}
+                label='Name'
+                name='name'
+                placeholder='Name…'
+                required
+                icon='user circle'
+                iconPosition='left'
+              />
+              <Form.Field
+                id='Email'
+                control={Input}
+                label='Email'
+                name='email'
+                placeholder='Email…'
+                required
+                icon='mail'
+                iconPosition='left'
+              />
+
+              <Form.Field
+                id='message'
+                control={TextArea}
+                label='Message'
+                name='message'
+                placeholder='Message…'
+                required
+              />
+              <div className="submit-btn">
+              <Button
+                variant="primary"
+                target="_blank"
+                style={{ maxWidth: "250px" }}
+              >Submit</Button>
+              </div>
+            </Form>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
+export default ContactForm;
