@@ -1,55 +1,14 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
-import { useRef } from 'react';
-import { Container, Row, Col} from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { Form, Input, TextArea } from 'semantic-ui-react';
-import Alert from 'react-bootstrap/Alert';
+import {useState} from 'react'
 
 const encode = (data) => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
 }
 
+export default function Form (){
+  const [state, setState] = useState({name: '', email: '', message: '' })
 
-function ContactForm() { 
-    const form = useRef();
-    const [state, setState] = useState({name: '', email: '', message: '' })
-
- {/* <!-- email logic and message sent/failed alert --> */}
-    const [show, setShow] = useState(false);
-    const [emSent, setEmSent] = useState(false);
-  
-
-    if (show && emSent) {
-      return (
-        <Alert variant="success" onClose={() => setShow(false)} dismissible>
-          <Alert.Heading>Message Sent</Alert.Heading>
-          <p>
-            Thank you for reaching out! I'll get back to you as soon as possible.
-          </p>
-          <p>
-            - Alex
-          </p>
-        </Alert>
-      );
-
-    } 
-    if (show && !emSent) {
-      return (
-        <Alert variant="danger" onClose={() => setShow(false)} dismissible>
-          <Alert.Heading>Something went wrong</Alert.Heading>
-          <p>
-            I apologize for the inconvenience, please try again.
-          </p>
-          <p>
-            If the error keeps occuring reach out to me via 
-            Linkedin and I'll be happy to message you there!
-          </p>
-        </Alert>
-      );
-    }
-    
   const handleChange = e =>
     setState({...state, [e.target.name]: e.target.value })
 
@@ -59,66 +18,36 @@ function ContactForm() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contactForm', ...state })
     })
-      .then((result) => {
-          console.log(result.text);
-          setEmSent(true);
-          setShow(true);
-
-        }, (error) => {
-          console.log(error.text);
-          setEmSent(false);
-          setShow(true);
-        });
-      e.preventDefault()
-    };
+      .then(() => alert('Success!'))
+      .catch(error => alert(error))
+    e.preventDefault()
+  }
 
   return (
-    <Container >
-      <Row>
-        <Col>
-          {/* <!-- contact form --> */}
-          <div className="contact">
-            <Form ref={form} onSubmit={handleSubmit}>
-              <Form.Field
-                id='name'
-                control={Input}
-                label='Name'
-                name='name'
-                placeholder='Name…'
-                required
-                icon='user circle'
-                iconPosition='left'
-              />
-              <Form.Field
-                id='Email'
-                control={Input}
-                label='Email'
-                name='email'
-                placeholder='Email…'
-                required
-                icon='mail'
-                iconPosition='left'
-              />
+    <form 
+      className='contactForm' 
+      onSubmit={handleSubmit}>
 
-              <Form.Field
-                id='message'
-                control={TextArea}
-                label='Message'
-                name='message'
-                placeholder='Message…'
-                required
-              />
-              <div className="submit-btn">
-              <Button
-                variant="primary"
-                target="_blank"
-                style={{ maxWidth: "250px" }}> Submit </Button>
-              </div>
-            </Form>
-          </div>
-        </Col>
-      </Row>
-    </Container>
-  );
+      <input 
+        type='text' 
+        name='name' 
+        value={state.name}
+        placeholder='Enter your name'
+        onChange={handleChange} />
+
+      <input 
+        type='email' 
+        name='email' 
+        value={state.email}
+        placeholder='Enter your email'
+        onChange={handleChange} />
+
+      <textarea 
+        name='message' 
+        placeholder='Messaage'
+        value={state.message}
+        onChange={handleChange}></textarea>
+      <button type='submit'>Submit</button>
+    </form>
+  )
 }
-export default ContactForm;
