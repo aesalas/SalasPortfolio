@@ -276,7 +276,7 @@ button:focus {
     flex-direction: column;
     gap: 20px;
   }
-  .contactForm input, button, textarea{
+  .contactForm input, textarea{
     height: 50px;
     padding-left: 5px;
     font-size: 18px;
