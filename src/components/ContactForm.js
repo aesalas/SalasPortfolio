@@ -113,17 +113,14 @@ const Form = () => {
                     {errors.message && <p>{errors.message}</p>}
                 </div>
                 
-                <div className="submit-btn">
-                  <Button type="submit" 
-                  className="submit-btn"
-                  variant="primary"
-                  target="_blank"
-                  style={{ maxWidth: "250px" }}>
-                      Submit
-                  </Button>
-                </div>
-                
+              <div className="submit-btn">
+                <Button type="submit" 
+                className="submit-btn">
+                        Submit
+                    </Button>
+              </div>
             </form>
+            
         </div>
 
     )
