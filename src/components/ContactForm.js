@@ -1,11 +1,9 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Button from "react-bootstrap/Button";
-import Alert from 'react-bootstrap/Alert';
 
 
 const Form = () => {
-
 
     const [formData, setFormData] = useState({
         name: "",
@@ -44,22 +42,6 @@ const Form = () => {
         e.preventDefault();
 
     }
-    const [show, setShow] = useState(false);
-    if (show && isSubmitted) {
-      return (
-        <Alert variant="success" onClose={() => setShow(false)} dismissible>
-          <Alert.Heading>Message Sent</Alert.Heading>
-          <p>
-            Thank you for reaching out! I'll get back to you as soon as possible.
-          </p>
-          <p>
-            - Alex
-          </p>
-        </Alert>
-      );
-      
-    } 
-
 
     const encode = (data) => {
         return Object.keys(data)
@@ -75,11 +57,7 @@ const Form = () => {
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: encode({ "form-name": "contact-form", ...formData })
             })
-            .then((result) => {
-              console.log(result.text);
-              setIsSubmitted(true);
-              setShow(true);
-            })
+            .then(() => alert("Message sent! Thank you for reaching out, I'll get back to you as soon as I can. -Alex"))
             .then(() => setIsSubmitted(false))
             .then(() => setFormData({name: "", email: "",  message: ""}))
             .catch(error => alert(error))
