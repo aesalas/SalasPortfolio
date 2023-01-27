@@ -69,7 +69,7 @@ const Form = () => {
         <div className="contact">
             <form onSubmit={handleSubmit} 
             method='POST' 
-            name='contactform' 
+            name='contactForm' 
             className='contactForm'>
               <input 
                 type='hidden' 
@@ -112,9 +112,16 @@ const Form = () => {
                         value={formData.message} onChange={handleChange} />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                <Button type="submit" className="submit-btn">
-                    Submit
-                </Button>
+                <Row style={{ justifyContent: "center", position: "relative" }}>
+                  <Button
+                    variant="primary"
+                    target="_blank"
+                    style={{ maxWidth: "250px" }}
+                    type="submit" 
+                    className="submit-btn">
+                            Submit
+                  </Button>
+                </Row>
 
             </form>
             
