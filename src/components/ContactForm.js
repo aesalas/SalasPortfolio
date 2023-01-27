@@ -112,7 +112,7 @@ const Form = () => {
                         value={formData.message} onChange={handleChange} />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                <Row style={{ justifyContent: "center", position: "relative" }}>
+                <div style={{ justifyContent: "center", position: "relative" }}>
                   <Button
                     variant="primary"
                     target="_blank"
@@ -121,7 +121,7 @@ const Form = () => {
                     className="submit-btn">
                             Submit
                   </Button>
-                </Row>
+                </div>
 
             </form>
             
