@@ -27,7 +27,10 @@ export default function Form (){
     <form 
       className='contactForm' 
       onSubmit={handleSubmit}>
-
+        <label htmlFor="name" className="form-label">
+            Name: 
+        </label>
+      
       <input 
         type='text' 
         name='name' 
