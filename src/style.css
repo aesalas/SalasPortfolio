@@ -292,12 +292,7 @@ button:focus {
   }
   .submit-btn{
     text-align: center;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
     justify-content: center;
-    max-width: "250px"
   }
   .contact-mod .modal-content {
     background-color: var(--background1);
