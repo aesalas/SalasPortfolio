@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Button from "react-bootstrap/Button";
-
+import  Row from "react-bootstrap/Row";
 
 const Form = () => {
 
@@ -112,13 +112,17 @@ const Form = () => {
                         value={formData.message} onChange={handleChange} />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                
-              <div className="submit-btn">
-                <Button type="submit" 
-                className="submit-btn">
-                        Submit
-                    </Button>
-              </div>
+                <Row style={{ justifyContent: "center", position: "relative" }}>
+                  <Button
+                    variant="primary"
+                    target="_blank"
+                    style={{ maxWidth: "250px" }}
+                    type="submit" 
+                    className="submit-btn">
+                            Submit
+                  </Button>
+                </Row>
+
             </form>
             
         </div>
