@@ -112,16 +112,13 @@ const Form = () => {
                         value={formData.message} onChange={handleChange} />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                <Row style={{ justifyContent: "center", position: "relative" }}>
-                  <Button
-                    variant="primary"
-                    target="_blank"
-                    style={{ maxWidth: "250px" }}
-                    type="submit" 
-                    className="submit-btn">
-                            Submit
-                  </Button>
-                </Row>
+                <div className="submit-btn">
+                    <Button
+                        variant="primary"
+                        target="_blank"
+                        style={{ maxWidth: "250px" }}
+                    >Submit</Button>
+              </div>
 
             </form>
             
