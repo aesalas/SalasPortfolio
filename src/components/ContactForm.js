@@ -113,7 +113,7 @@ const Form = () => {
                     {errors.message && <p>{errors.message}</p>}
                 </div>
                 
-                <div style={{ justifyContent: "center", position: "relative" }}>
+                <div className="submit-btn" style={{ justifyContent: "center", position: "relative" }}>
                   <Button type="submit" 
                   className="submit-btn"
                   variant="primary"
