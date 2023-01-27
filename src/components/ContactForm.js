@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Button from "react-bootstrap/Button";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -27,30 +28,36 @@ export default function Form (){
     <form 
       className='contactForm' 
       onSubmit={handleSubmit}>
-        <label htmlFor="name" className="form-label">
-            Name: 
-        </label>
+    <label htmlFor="name" className="form-label">
+        Name: 
+    </label>
       
       <input 
         type='text' 
         name='name' 
         value={state.name}
-        placeholder='Enter your name'
+        required
         onChange={handleChange} />
 
-      <input 
-        type='email' 
-        name='email' 
-        value={state.email}
-        placeholder='Enter your email'
-        onChange={handleChange} />
+    <label htmlFor="email" className="form-label">
+        Email: 
+    </label>  
+    <input 
+    type='email' 
+    name='email' 
+    value={state.email}
+    required
+    onChange={handleChange} />
 
+    <label htmlFor="message" className="form-label">
+        Message: 
+    </label> 
       <textarea 
         name='message' 
-        placeholder='Messaage'
+        required
         value={state.message}
         onChange={handleChange}></textarea>
-      <button type='submit'>Submit</button>
+      <Button type='submit'>Submit</Button>
     </form>
     </div>
   )
