@@ -75,6 +75,7 @@ const Form = () => {
                 type='hidden' 
                 name='form-name'
                 value='contactForm' />
+                
                 <div className="form-inputs">
                     <label htmlFor="name" className="form-label">
                         Name: 
@@ -112,16 +113,11 @@ const Form = () => {
                         value={formData.message} onChange={handleChange} />
                     {errors.message && <p>{errors.message}</p>}
                 </div>
-                <div style={{ justifyContent: "center", position: "relative" }}>
-                  <Button
-                    variant="primary"
-                    target="_blank"
-                    style={{ maxWidth: "250px" }}
+                <Button
                     type="submit" 
                     className="submit-btn">
-                            Submit
-                  </Button>
-                </div>
+                        Submit
+                </Button>
 
             </form>
             
