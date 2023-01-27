@@ -114,7 +114,11 @@ const Form = () => {
                 </div>
                 
            
-            <Button type="submit" className="submit-btn">
+            <Button type="submit" 
+                className="submit-btn"
+                variant="primary"
+                target="_blank"
+                style={{ maxWidth: "250px" }}>
                     Submit
                 </Button>
             </form>
