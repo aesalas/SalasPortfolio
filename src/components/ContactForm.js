@@ -5,9 +5,8 @@ import Alert from 'react-bootstrap/Alert';
 
 
 const Form = () => {
-  const [show, setShow] = useState(false);
-  const [emSent, setEmSent] = useState(false);
-  
+
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -45,8 +44,8 @@ const Form = () => {
         e.preventDefault();
 
     }
-
-    if (show && emSent) {
+    const [show, setShow] = useState(false);
+    if (show && isSubmitted) {
       return (
         <Alert variant="success" onClose={() => setShow(false)} dismissible>
           <Alert.Heading>Message Sent</Alert.Heading>
@@ -78,7 +77,7 @@ const Form = () => {
             })
             .then((result) => {
               console.log(result.text);
-              setEmSent(true);
+              setIsSubmitted(true);
               setShow(true);
             })
             .then(() => setIsSubmitted(false))
