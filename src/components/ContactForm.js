@@ -1,10 +1,13 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Button from "react-bootstrap/Button";
+import Alert from 'react-bootstrap/Alert';
 
 
 const Form = () => {
-
+  const [show, setShow] = useState(false);
+  const [emSent, setEmSent] = useState(false);
+  
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -43,6 +46,22 @@ const Form = () => {
 
     }
 
+    if (show && emSent) {
+      return (
+        <Alert variant="success" onClose={() => setShow(false)} dismissible>
+          <Alert.Heading>Message Sent</Alert.Heading>
+          <p>
+            Thank you for reaching out! I'll get back to you as soon as possible.
+          </p>
+          <p>
+            - Alex
+          </p>
+        </Alert>
+      );
+      
+    } 
+
+
     const encode = (data) => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -57,7 +76,11 @@ const Form = () => {
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: encode({ "form-name": "contact-form", ...formData })
             })
-            .then(() => alert("Success!"))
+            .then((result) => {
+              console.log(result.text);
+              setEmSent(true);
+              setShow(true);
+            })
             .then(() => setIsSubmitted(false))
             .then(() => setFormData({name: "", email: "",  message: ""}))
             .catch(error => alert(error))
@@ -113,10 +136,11 @@ const Form = () => {
                     {errors.message && <p>{errors.message}</p>}
                 </div>
                 
-            </form>
+           
             <Button type="submit" className="submit-btn">
-                    Send
+                    Submit
                 </Button>
+            </form>
         </div>
 
     )
