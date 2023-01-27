@@ -57,7 +57,7 @@ const Form = () => {
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: encode({ "form-name": "contact-form", ...formData })
             })
-            .then(() => alert("Message sent! Thank you for reaching out, I'll get back to you as soon as I can. -Alex"))
+            .then(() => alert("Message sent! Thank you for reaching out, I'll get back to you as soon as I can."))
             .then(() => setIsSubmitted(false))
             .then(() => setFormData({name: "", email: "",  message: ""}))
             .catch(error => alert(error))
