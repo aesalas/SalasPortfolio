@@ -78,14 +78,7 @@ function NavBar() {
               >Resume
               </Nav.Link>
             </Nav.Item>
-
-            
-
-            <Nav.Item className="theme-toggle" >
-            
               <Toggle />
-              
-           </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
