@@ -54,7 +54,7 @@ const Form = () => {
           fetch("/", {
               method: "POST",
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body: encode({ "form-name": "contact-form", ...formData })
+              body: encode({ "form-name": "contactForm", ...formData })
           })
           .then(() => alert("Success!"))
           .then(() => setIsSubmitted(false))
