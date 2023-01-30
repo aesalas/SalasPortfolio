@@ -78,7 +78,12 @@ function NavBar() {
               >Resume
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item className="connect-btn" >
               <Toggle />
+            </Nav.Item>
+
+
+              
           </Nav>
         </Navbar.Collapse>
       </Container>

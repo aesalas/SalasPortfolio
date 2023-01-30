@@ -174,7 +174,8 @@ button:focus {
 }
 .logo {
   height: 4em !important;
-  width: 4em !important;
+  width: 4em !important; 
+  justify-content: center;
 }
 .navbar-nav .nav-link {
   color: var(--text-color) !important;
@@ -561,12 +562,10 @@ button:focus {
 .accordion{
   margin: 3rem;
   text-align: left;
-  color: var(--text-color) !important;
-
 }
 .accordion-button {
-  opacity: 0.96; 
-  color:var(--text-color);
+  opacity: 0.96;   
+  color: var(--text-color) !important;
   background-image: var(--section-background-color) ;
 }
 .accordion-button:focus {
