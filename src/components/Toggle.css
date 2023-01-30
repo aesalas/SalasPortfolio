@@ -34,19 +34,19 @@
     /** Show the dimples on the moon **/
   }
   .toggle--checkbox:checked + .toggle--label .toggle--label-background {
-    left: 12px;
-    width: 1px;
+    left: 24px;
+    width: 2px;
   }
   .toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
-    width: 1px;
-    height: 1px;
-    top: -5px;
+    width: 2px;
+    height: 2px;
+    top: -10px;
   }
   .toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
-    width: 1px;
-    height: 1px;
-    left: -6px;
-    top: 4px;
+    width: 2px;
+    height: 2px;
+    left: -12px;
+    top: 8px;
   }
   .toggle--checkbox:checked + .toggle--label:before {
     background: var(--white);
@@ -61,11 +61,11 @@
   }
   .toggle--label {
     /** Placeholder element, starting at blue **/
-    width: 40px;
-    height: 20px;
+    width: 80px;
+    height: 40px;
     background: var(--blue-color);
-    border-radius: 20px;
-    border: 1px solid var(--blue-border);
+    border-radius: 40px;
+    border: 2px solid var(--blue-border);
     display: flex;
     position: relative;
     transition: all 350ms ease-in;
@@ -74,35 +74,35 @@
     /** Gray dots on the moon **/
   }
   .toggle--label-background {
-    width: 2px;
-    height: 1px;
-    border-radius: 1px;
+    width: 4px;
+    height: 2px;
+    border-radius: 2px;
     position: relative;
     background: var(--white);
-    left: 27px;
-    top: 9px;
+    left: 54px;
+    top: 18px;
     transition: all 150ms ease-in;
   }
   .toggle--label-background:before {
     content: "";
     position: absolute;
-    top: -1px;
-    width: 8px;
-    height: 1px;
-    border-radius: 1px;
+    top: -2px;
+    width: 16px;
+    height: 2px;
+    border-radius: 2px;
     background: var(--white);
-    left: -4px;
+    left: -8px;
     transition: all 150ms ease-in;
   }
   .toggle--label-background:after {
     content: "";
     position: absolute;
-    top: 1px;
-    width: 8px;
-    height: 1px;
-    border-radius: 1px;
+    top: 2px;
+    width: 16px;
+    height: 2px;
+    border-radius: 2px;
     background: var(--white);
-    left: -2px;
+    left: -4px;
     transition: all 150ms ease-in;
   }
   .toggle--label:before {
@@ -111,13 +111,13 @@
     animation-fill-mode: forwards;
     transition: all 350ms ease-in;
     content: "";
-    width: 16.4px;
-    height: 16.4px;
-    border: 1px solid var(--yellow-border);
-    top: .8px;
-    left: .8px;
+    width: 32.8px;
+    height: 32.8px;
+    border: 2px solid var(--yellow-border);
+    top: 1.6px;
+    left: 1.6px;
     position: absolute;
-    border-radius: 16.4px;
+    border-radius: 32.8px;
     background: var(--yellow-background);
   }
   .toggle--label:after {
@@ -125,11 +125,11 @@
     transition: all 250ms ease-in;
     position: absolute;
     content: "";
-    box-shadow: var(--gray-dots) -2.6px 0 0 .4px, var(--gray-dots) -4.8px 2.8px 0 -.4px;
-    left: 28.6px;
-    top: 4.6px;
-    width: 2px;
-    height: 2px;
+    box-shadow: var(--gray-dots) -5.2px 0 0 .8px, var(--gray-dots) -9.6px 5.6px 0 -.8px;
+    left: 57.2px;
+    top: 9.2px;
+    width: 4px;
+    height: 4px;
     background: transparent;
     border-radius: 50%;
     opacity: 0;
@@ -137,27 +137,27 @@
   
   @keyframes switch {
     0% {
-      left: .8px;
+      left: 1.6px;
     }
     60% {
-      left: 14.4px;
-      width: 22.4px;
+      left: 28.8px;
+      width: 44.8px;
     }
     100% {
-      left: 20.8px;
-      width: 16.4px;
+      left: 41.6px;
+      width: 32.8px;
     }
   }
   @keyframes reverse {
     0% {
-      left: 20.8px;
-      width: 16.4px;
+      left: 41.6px;
+      width: 32.8px;
     }
     60% {
-      left: 14.4px;
-      width: 22.4px;
+      left: 28.8px;
+      width: 44.8px;
     }
     100% {
-      left: .8px;
+      left: 1.6px;
     }
   }
