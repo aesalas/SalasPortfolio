@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.png";
 import Type from "./Type";
 import ContactForm from '../ContactForm'
+import Card from "react-bootstrap/Card";
 
 function Home() {
 
