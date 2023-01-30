@@ -216,8 +216,8 @@ button:focus {
   width: 100%;
 }
 .theme-toggle{
-  max-width:2rem;
-  max-height:2rem;
+  justify-content: center;
+  padding: 2rem;
 }
 /* ---------------------------------------- */
 /*                  Home                    */

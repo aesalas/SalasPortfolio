@@ -58,9 +58,9 @@ function Home() {
         <Col md={{ span: 6, offset: 3 }} className="home-about-social">
             <h1>Contact</h1>
               <p>Connect with me on LinkedIn or fill out the form to send me an email!</p>
-              <div className="contact-frm">
+              
                 <ContactForm/>
-              </div>
+              
         </Col>
       </div>
     </section>
