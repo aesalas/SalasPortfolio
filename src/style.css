@@ -298,6 +298,13 @@ button:focus {
   .contact-mod .modal-content {
     background-color: var(--background1);
   }
+  .contact-message{
+    background-color: var(--accent3);
+  }
+  .contact-frm{
+    background-color: var(--accent3-highlight);
+    box-shadow: var(--background1-shadow);
+  }
 
 
 /* ----------------------------------------- */

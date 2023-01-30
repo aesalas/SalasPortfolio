@@ -13,10 +13,6 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -88,14 +84,13 @@ function NavBar() {
 
             
 
-            <Nav.Item className="connect-btn" >
+            <Nav.Item className="theme-toggle" >
             
               <Button 
                 className="connect-btn-inner"
-                onClick={handleShow}
                 >
 
-                <AiOutlineMail style={{ fontSize: "1.2em" }} />
+                theme toggle place holder
               </Button>
               
            </Nav.Item>
@@ -103,21 +98,6 @@ function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-       <Modal 
-          className="contact-mod"
-          show={show} 
-          aria-labelledby="contained-modal-title-vcenter"
-          centered
-          onHide={handleClose}>
-        <Modal.Header closeButton className="contact-header">
-          <Modal.Title>
-            <h1>Contact Me!</h1>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <ContactForm/>
-        </Modal.Body>
-      </Modal>
   </div>
   );
 }
