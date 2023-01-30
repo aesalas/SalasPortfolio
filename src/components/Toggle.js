@@ -4,7 +4,7 @@ import { setTheme } from '../utils/themes';
 
 function Toggle() {
     // false = dark mode because of the way I wrote the CSS
-    const [active, setActive] = useState(false)
+    const [active, setActive] = useState(true)
     // the opposite, for screenreaders
     const [ariaActive, setAriaActive] = useState(true)
     let theme = localStorage.getItem('theme')
