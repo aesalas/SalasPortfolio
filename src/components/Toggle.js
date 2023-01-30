@@ -46,7 +46,6 @@ function Toggle() {
         <input aria-label="dark mode toggle" role="switch" aria-checked={ariaActive} onKeyPress={handleKeypress} type="checkbox" id="toggle" className="toggle--checkbox" onClick={handleOnClick} checked={active} readOnly />
         <label htmlFor="toggle" className="toggle--label">
           <span className="toggle--label-background"></span>
-          dark mode toggle
         </label>
       </div>
     )

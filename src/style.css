@@ -215,7 +215,10 @@ button:focus {
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
-
+.theme-toggle{
+  max-width:2rem;
+  max-height:2rem;
+}
 /* ---------------------------------------- */
 /*                  Home                    */
 /* ---------------------------------------- */
@@ -315,9 +318,7 @@ button:focus {
     justify-content: center;
     
   }
-  .contact-mod .modal-content {
-    background-color: var(--background1);
-  }
+
   .contact-message{
     background-color: var(--accent3);
   }
@@ -488,6 +489,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+  color: var(--text-color);
 }
 
 .project-card {

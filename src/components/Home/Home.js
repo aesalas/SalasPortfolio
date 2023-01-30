@@ -57,12 +57,12 @@ function Home() {
       <div className="home-contact">
         <Col md={{ span: 6, offset: 3 }} className="home-about-social">
             <h1>Contact</h1>
-            <Card className="contact-message">
+            <div className="contact-message">
               <p>Connect with me on LinkedIn or fill out the form to send me an email!</p>
-              <Card className="contact-frm">
+              <div className="contact-frm">
                 <ContactForm/>
-              </Card>
-            </Card>
+              </div>
+            </div>
         </Col>
       </div>
     </section>
