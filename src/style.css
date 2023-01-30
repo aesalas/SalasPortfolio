@@ -9,6 +9,8 @@
 
   --accent3-highlight: #F8E6C9; 
   --background1-shadow: #294851;
+
+  --text-color: white;
 }
 
 .theme-light{
@@ -20,6 +22,8 @@
 
   --accent3-highlight: #AA160E; 
   --background1-shadow: #9F462D;
+
+  --text-color: black;
 }
 
 
@@ -173,7 +177,7 @@ button:focus {
   width: 4em !important;
 }
 .navbar-nav .nav-link {
-  color: black !important;
+  color: var(--text-color) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -231,7 +235,7 @@ button:focus {
 
 .home-content {
   padding: 9rem 2rem 1rem !important;
-  color: blacksmoke;
+  color: var(--text-color);
   text-align: left;
 }
 
@@ -350,7 +354,7 @@ button:focus {
 }
 .footer h3 {
   font-size: 1em;
-  color: black !important;
+  color: var(--text-color) !important;
   margin-top: 1em !important;
   margin-bottom: 0.5em !important;
 }
@@ -411,7 +415,7 @@ button:focus {
   padding-top: 100px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: black !important;
+  color: var(--text-color) !important;
 }
 .about-row {
   justify-content: center; 
@@ -455,7 +459,7 @@ button:focus {
 }
 .quote-card-view {
   border: none !important;
-  color: black !important;
+  color: var(--text-color) !important;
   background-color: transparent !important;
   padding-top: 0;
 }
@@ -496,7 +500,7 @@ button:focus {
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px var(--accent3) !important;
-  color: black !important;
+  color: var(--text-color) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -528,7 +532,7 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
-  color: black !important;
+  color: var(--text-color) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -542,7 +546,7 @@ button:focus {
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: black !important;
+  color: var(--text-color) !important;
   background-size: cover !important;
   background-repeat: no-repeat;
 }

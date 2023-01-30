@@ -5,9 +5,8 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { AiOutlineMail } from "react-icons/ai";
-import Modal from 'react-bootstrap/Modal';
 import ContactForm from "./ContactForm";
+import Toggle from './Toggle';
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -86,12 +85,7 @@ function NavBar() {
 
             <Nav.Item className="theme-toggle" >
             
-              <Button 
-                className="connect-btn-inner"
-                >
-
-                theme toggle place holder
-              </Button>
+              <Toggle />
               
            </Nav.Item>
           </Nav>
