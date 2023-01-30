@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './toggle.css';
+import './Toggle.css';
 import { setTheme } from '../utils/themes';
 
 function Toggle() {
