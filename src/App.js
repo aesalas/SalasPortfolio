@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import { keepTheme } from './utils/themes';
 import {
   BrowserRouter as Router,
   Route,
@@ -23,6 +24,7 @@ function App() {
 
 
   useEffect(() => {
+    keepTheme();
     const timer = setTimeout(() => {
       updateLoad(false);
     }, 1200);

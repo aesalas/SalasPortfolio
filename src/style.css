@@ -1,4 +1,17 @@
-:root {
+
+
+.theme-dark {
+  --background1: #010713;
+  --background2:#041D4E;
+  --accent1: #6B8F71;
+  --accent2: #EDC85A;
+  --accent3:#F3D5A5;
+
+  --accent3-highlight: #F8E6C9; 
+  --background1-shadow: #294851;
+}
+
+.theme-light{
   --background1: #F6E5E0;
   --background2:#EDCAC0;
   --accent1: #6B8F71;
@@ -8,6 +21,9 @@
   --accent3-highlight: #AA160E; 
   --background1-shadow: #9F462D;
 }
+
+
+
 
 html {
   --section-background-color: linear-gradient(
