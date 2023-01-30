@@ -566,7 +566,8 @@ button:focus {
   text-align: left;
 }
 .accordion-button {
-  opacity: 0.96;
+  opacity: 0.96; 
+  color:var(--text-color);
   background-image: var(--section-background-color) ;
 }
 .accordion-button:focus {
