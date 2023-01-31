@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Accordion } from "react-bootstrap";
+import { Container, Row, Accordion, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/Alexandra_Salas_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
