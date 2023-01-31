@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/toggle.css';
+import './toggle.css';
 import { setTheme } from '../utils/themes';
 function Toggle() {
     const [togClass, setTogClass] = useState('dark');
