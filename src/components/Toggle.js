@@ -6,16 +6,16 @@ function Toggle() {
     // false = dark mode because of the way I wrote the CSS
     const [active, setActive] = useState(false)
     // the opposite, for screenreaders
-    const [ariaActive, setAriaActive] = useState(false)
+    const [ariaActive, setAriaActive] = useState(true)
     let theme = localStorage.getItem('theme')
 
     const changeThemeAndToggle = () => {
       if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-light')
+        setTheme('theme-dark')
         setActive(true)
         setAriaActive(false)
       } else {
-        setTheme('theme-dark')
+        setTheme('theme-light')
         setActive(false)
         setAriaActive(true)
       }
