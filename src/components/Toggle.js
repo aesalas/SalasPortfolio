@@ -10,14 +10,15 @@ function Toggle() {
     let theme = localStorage.getItem('theme')
 
     const changeThemeAndToggle = () => {
-      if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-light')
-        setActive(true)
-        setAriaActive(false)
-      } else {
+      if (localStorage.getItem('theme') === 'theme-light') {
         setTheme('theme-dark')
         setActive(false)
         setAriaActive(true)
+        
+      } else {
+        setTheme('theme-light')
+        setActive(true)
+        setAriaActive(false)
       }
     }
 
@@ -32,12 +33,12 @@ function Toggle() {
     }
 
     useEffect(() => {
-      if (localStorage.getItem('theme') === 'theme-dark') {
-        setActive(false)
-        setAriaActive(true)
-      } else if (localStorage.getItem('theme') === 'theme-light') {
+      if (localStorage.getItem('theme') === 'theme-light') {
         setActive(true)
         setAriaActive(false)
+      } else if (localStorage.getItem('theme') === 'theme-dark') {
+        setActive(false)
+        setAriaActive(true)
       }
     }, [theme])
 
@@ -52,7 +53,7 @@ function Toggle() {
                 className="toggle--checkbox" 
                 onClick={handleOnClick} 
                 checked={active} 
-                 />
+                readOnly />
         <label htmlFor="toggle" className="toggle--label">
           <span className="toggle--label-background"></span>
         </label>
