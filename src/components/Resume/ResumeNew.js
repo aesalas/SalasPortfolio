@@ -11,6 +11,7 @@ return (
       <h1 style={{ fontSize: "2.1em", paddingTop: 25}}>
       <strong className="popOColor">Summary </strong>
       </h1>
+      <Col md={{span: 8, offset:1}}>
         <Accordion defaultActiveKey="0" flush >
           {/***** Experience and projects *****/}
           <Accordion.Item eventKey="0">
@@ -121,7 +122,7 @@ return (
           </Accordion.Item>
 
         </Accordion>
-
+      </Col>
         <Row style={{ justifyContent: "center", position: "relative" , paddingBottom:"20px" }}>
           <Button
             variant="primary"
