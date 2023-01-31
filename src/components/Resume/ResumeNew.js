@@ -127,7 +127,7 @@ return (
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", paddingBottom:"20px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download Resume
