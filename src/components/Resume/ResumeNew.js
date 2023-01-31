@@ -122,12 +122,12 @@ return (
 
         </Accordion>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative" , paddingBottom:"20px" }}>
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px", paddingBottom:"20px" }}
+            style={{ maxWidth: "250px"}}
           >
             <AiOutlineDownload />
             &nbsp;Download Resume
