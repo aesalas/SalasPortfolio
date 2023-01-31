@@ -33,11 +33,11 @@ function Toggle() {
 
     useEffect(() => {
       if (localStorage.getItem('theme') === 'theme-dark') {
-        setActive(true)
-        setAriaActive(false)
-      } else if (localStorage.getItem('theme') === 'theme-light') {
         setActive(false)
         setAriaActive(true)
+      } else if (localStorage.getItem('theme') === 'theme-light') {
+        setActive(true)
+        setAriaActive(false)
       }
     }, [theme])
 
