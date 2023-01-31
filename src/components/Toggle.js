@@ -9,53 +9,33 @@ function Toggle() {
     const [ariaActive, setAriaActive] = useState(false)
     let theme = localStorage.getItem('theme')
 
-    const changeThemeAndToggle = () => {
-      if (localStorage.getItem('theme') === 'theme-light') {
-        setTheme('theme-dark')
-        setActive(false)
-        setAriaActive(true)
-        
+    function setTheme(themeName) {
+      localStorage.setItem('theme', themeName);
+      document.documentElement.className = themeName;
+  }
+
+  // function to toggle between light and dark theme
+  function toggleTheme() {
+      if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-light');
       } else {
-        setTheme('theme-light')
-        setActive(true)
-        setAriaActive(false)
+          setTheme('theme-dark');
       }
-    }
+  }
 
-    const handleOnClick = () => {
-      changeThemeAndToggle()
-    }
-
-    const handleKeypress = e => {
-      if (e.code === "Enter") {
-        changeThemeAndToggle()
+  // Immediately invoked function to set the theme on initial load
+  (function () {
+      if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-dark');
+      } else {
+          setTheme('theme-light');
       }
-    }
-
-    useEffect(() => {
-      if (localStorage.getItem('theme') === 'theme-light') {
-        setActive(true)
-        setAriaActive(false)
-      } else if (localStorage.getItem('theme') === 'theme-dark') {
-        setActive(false)
-        setAriaActive(true)
-      }
-    }, [theme])
 
     return (
       <div className="container--toggle">
-        <input  aria-label="dark mode toggle" 
-                role="switch" 
-                aria-checked={ariaActive} 
-                onKeyPress={handleKeypress} 
-                type="checkbox" 
-                id="toggle" 
-                className="toggle--checkbox" 
-                onClick={handleOnClick} 
-                checked={active} 
-                readOnly />
-        <label htmlFor="toggle" className="toggle--label">
-          <span className="toggle--label-background"></span>
+        <input type="checkbox" id="toggle" class="toggle--checkbox" />
+        <label for="toggle" class="toggle--label">
+          <span class="toggle--label-background"></span>
         </label>
         
       </div>

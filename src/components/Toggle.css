@@ -15,17 +15,14 @@
     --white: #fff;
   }
   
-  .container--toggle {
-    place-items: center;
-    min-height: 60px;
-    position: relative;
-    margin: 20px;
-}
 
   .toggle--checkbox {
-    opacity: 0;
+    display: none;
   }
-
+  .toggle--checkbox:checked {
+    /** This will all flip from sun to moon **/
+    /** Change the label color **/
+  }
   .toggle--checkbox:checked ~ .background {
     background: var(--indigo-background);
   }
