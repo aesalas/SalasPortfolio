@@ -11,7 +11,7 @@ return (
       <h1 style={{ fontSize: "2.1em", paddingTop: 25}}>
       <strong className="popOColor">Summary </strong>
       </h1>
-      <Col md={10}>
+      <Col md={{span: 10, offset:1}}>
         <Accordion defaultActiveKey="0" flush >
           {/***** Experience and projects *****/}
           <Accordion.Item eventKey="0">
