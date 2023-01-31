@@ -56,7 +56,7 @@ const Form = () => {
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
               body: encode({ "form-name": "contactForm", ...formData })
           })
-          .then(() => alert("Success!"))
+          .then(() => alert("Message sent! I'll get back to you as soon as possible!"))
           .then(() => setIsSubmitted(false))
           .then(() => setFormData({name: "", email: "",  message: ""}))
           .catch(error => alert(error))
@@ -82,7 +82,7 @@ const Form = () => {
         </div>
         <div className="form-inputs">
             <label htmlFor="email" className="form-label">
-                Email
+                Email:
             </label>     
             <input 
                 type="email" 
@@ -95,7 +95,7 @@ const Form = () => {
         </div>
         <div className="form-inputs">
             <label htmlFor="message" className="form-label">
-                Message
+                Message:
             </label>     
             <textarea  
                 name="message" 
