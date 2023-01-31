@@ -3,7 +3,7 @@ import { Container, Row, Accordion } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/Alexandra_Salas_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-
+import ContactForm from '../ContactForm';
 
 function ResumeNew() {
 return (
@@ -122,9 +122,6 @@ return (
 
         </Accordion>
 
-
-
-
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -136,6 +133,13 @@ return (
             &nbsp;Download Resume
           </Button>
         </Row>
+        <Col md={{ span: 6, offset: 3 }} className="home-about-social">
+            <h1>Questions?</h1>
+              <p>Reach out on LinkedIn or fill out the form to send me an email!</p>
+              
+                <ContactForm/>
+              
+        </Col>
       </Container>
   );
 }
