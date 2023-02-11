@@ -1,6 +1,5 @@
 
-import React, { useState } from "react";
-import emailjs from 'emailjs-com';
+import React from "react";
 import { useRef } from 'react';
 import { Container, Row, Col} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
@@ -66,44 +65,22 @@ function ContactForm() {
         <Col>
           {/* <!-- contact form --> */}
           <div className="contact">
-            <Form ref={form} onSubmit={sendEmail}>
-              <Form.Field
-                id='name'
-                control={Input}
-                label='Name'
-                name='name'
-                placeholder='Name…'
-                required
-                icon='user circle'
-                iconPosition='left'
-              />
-              <Form.Field
-                id='Email'
-                control={Input}
-                label='Email'
-                name='email'
-                placeholder='Email…'
-                required
-                icon='mail'
-                iconPosition='left'
-              />
-              
-              <Form.Field
-                id='message'
-                control={TextArea}
-                label='Message'
-                name='message'
-                placeholder='Message…'
-                required
-              />
-              <div className="submit-btn">
-              <Button
-                variant="primary"
-                target="_blank"
-                style={{ maxWidth: "250px" }}
-              >Submit</Button>
-              </div>
-            </Form>
+            form name="contact" method="post">
+              <input type="hidden" name="form-name" value="contact" />
+              <p>
+                <label htmlFor="name">Name</label> <br />
+                <input type="text" id="name" name="name" required />
+              </p>
+              <p>
+                <label htmlFor="email">Email</label> <br />
+                <input type="email" id="email" name="email" required />
+              </p>
+              <p>
+                <label htmlFor="message">Message</label> <br />
+                <textarea id="message" name="message" required></textarea>
+              </p>
+              <Button type='submit'>Submit</Button>
+            </form>
           </div>
         </Col>
       </Row>
