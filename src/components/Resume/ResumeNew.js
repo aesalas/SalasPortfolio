@@ -29,14 +29,28 @@ return (
                   </li>
                   <li>
                       Created documentation and diagrams to better understand 
-                      requirements and expectations, and processes of requirements 
+                      requirements and expectations of client, and processes of requirements 
                       engineering.
                   </li>
                   <li>
                       Utilized .NET Core/C#, Electron.NET, Docker, HTML/CSS, 
                       Angular/Nebular, SQLite, Node.JS, GitHub, and Visual studios IDE
                   </li>
+                        </ul>
+              <h3> <strong className="popOColor"> Person Portfolio Website</strong>
+               <br /> <i>Personal Project, August 2022 – February 2023</i></h3>
+                <ul className="resume-list">
+                    <li >
+                        Designed and developed website to showcase programming projects and skills and hosted with
+                        a custom domain using Netlify.
+                    </li>
+                    <li>
+                        Implemented Search Engine Optimization (SEO) strategies using Reactjs, GitHub, Visual Studio
+                        to create an interactive and responsive user interface.
+
+                    </li>
                 </ul>
+
 
               <h3> <strong className="popOColor"> Vas Home Inspection Web Application</strong>,  Vas Home Inspections 
               <br/> <i>Freelance, August 2022 – Present</i></h3>
@@ -59,18 +73,15 @@ return (
                   </li>
                 </ul>
 
-              <h3> <strong className="popOColor">Receptionist </strong>, Vas Home Inspections <br/> <i>June 2017 – June 2018</i></h3>
+                        <h3> <strong className="popOColor">Adjuster Assistant / QA Examiner</strong>, Vas Claim Adjusters <br/> <i>June 2020 – Present</i></h3>
                 <ul className="resume-list">
                   <li >
-                    Managed receptionist area, including greeting customers, responding to telephone, and in-person requests for information. 
-
+                      Used Xactanalysis/Xactimate software to review final reports for errors prior to submission.
                   </li>
                   <li>
-                    Prepared reports to be sent out to insurance companies and realtors.	
+                      Prepared, reviewed, and summarized declaration page and prior estimates to prepare inspector for inspection.
                   </li>
-                  <li>
-                    Managed inspection schedule.
-                  </li>
+                  
                 </ul>
 
               </Accordion.Body>
@@ -89,9 +100,7 @@ return (
                 Completed coursework includes Requirements engineering, Data engineering, Computer Assembly Language, Cloud technology, Object-Oriented Programming, Software Security, Blockchain Applications, programming methodologies, and Data Structures and Algorithms
 
                 </li>
-                <li>
-                    First-generation college graduate
-                </li>
+                
                 <li>
                 Educated in Adobe Photoshop, Adobe Illustrator, Atlassian (Jira and Confluence), Git/Github
                 </li>
@@ -104,18 +113,21 @@ return (
             <Accordion.Body>
               <ul className="resume-list">
                 <li >
-                	Florida Gulf Coast University, Bachelor of Science in Software Engineering with Mathematics minor, Magna Cum Laude
+                                Florida Gulf Coast University, Bachelor of Science in Software Engineering with Mathematics minor, Magna Cum Laude, First-generation college graduate
                 </li>
                 </ul>
             </Accordion.Body>
           </Accordion.Item>
           {/***** Awards and Achievements *****/}
           <Accordion.Item eventKey="3" flush>
-          <Accordion.Header><h3>  Awards and Achievements </h3></Accordion.Header>
+          <Accordion.Header><h3>  Certifications and Licenses </h3></Accordion.Header>
             <Accordion.Body>
             <ul className="resume-list">
                 <li >
-                  FGCU Dean’s List, 2018– 2022
+                    Professional Claims Adjuster All Lines License, 2023-Present
+                </li>
+                <li >
+                    Introduction to Enterprise-grade AI, IBM
                 </li>
               </ul>
             </Accordion.Body>
