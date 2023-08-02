@@ -48,6 +48,16 @@ return (
                   </li>
                 </ul>
 
+              <h3> <strong className="popOColor"> Personal Portfolio Website</strong> 
+              <br/> <i>Personal Project, August 2022 – Present</i></h3>
+                <ul className="resume-list">
+                  <li >
+                  	Designed and developed website to showcase programming projects and skills and hosted with a custom domain using Netlify.
+                  </li>
+                  <li>
+                  	Implemented Search Engine Optimization (SEO) strategies using Reactjs, GitHub, Visual Studio to create an interactive and responsive user interface
+                  </li>
+                </ul>
               <h3> <strong className="popOColor">Web3 Client Application </strong> <br/> <i>Personal Project, August 2022</i></h3>
                 <ul className="resume-list">
                   <li >
@@ -58,7 +68,7 @@ return (
                   </li>
                 </ul>
 
-              <h3> <strong className="popOColor">Receptionist </strong>, Vas Home Inspections <br/> <i>June 2017 – June 2018</i></h3>
+              <h3> <strong className="popOColor">Adjuster Assistant / QA Examiner </strong>, Vas Claim Adjusters <br/> <i>June 2020 – Present</i></h3>
                 <ul className="resume-list">
                   <li >
                     Managed receptionist area, including greeting customers, responding to telephone, and in-person requests for information. 
@@ -89,9 +99,6 @@ return (
 
                 </li>
                 <li>
-                    First-generation college graduate
-                </li>
-                <li>
                 Educated in Adobe Photoshop, Adobe Illustrator, Atlassian (Jira and Confluence), Git/Github
                 </li>
               </ul>
@@ -103,27 +110,27 @@ return (
             <Accordion.Body>
               <ul className="resume-list">
                 <li >
-                	Florida Gulf Coast University, Bachelor of Science in Software Engineering with Mathematics minor, Magna Cum Laude
+                	Florida Gulf Coast University, Bachelor of Science in Software Engineering with Mathematics minor, Magna Cum Laude, First-generation college graduate
                 </li>
                 </ul>
             </Accordion.Body>
           </Accordion.Item>
           {/***** Awards and Achievements *****/}
           <Accordion.Item eventKey="3" flush>
-          <Accordion.Header><h3>  Awards and Achievements </h3></Accordion.Header>
+          <Accordion.Header><h3>  Certifications and Licenses </h3></Accordion.Header>
             <Accordion.Body>
             <ul className="resume-list">
                 <li >
-                  FGCU Dean’s List, 2018– 2022
+                	Professional Claims Adjuster All Lines License, 2023-Present
+                </li>
+                <li >
+                	Introduction to Enterprise-grade AI, IBM 
                 </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
 
         </Accordion>
-
-
-
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button

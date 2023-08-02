@@ -25,8 +25,8 @@ function AboutCard() {
               projects.
               <br />
               <span className="popOColor" style={{fontSize:25}}>4 |</span> I'm become a quick learner. As
-              a first-generation college graduate, I've had to navigate my career on my own. Another r
-              eason technology is for me, I enjoy getting thrown into problems and figuring my way out. 
+              a first-generation college graduate, I've had to navigate my career on my own. Another reason 
+              technology is for me, I enjoy getting thrown into problems and figuring my way out. 
               <br />
               <span className="popOColor" style={{fontSize:25}}>5 |</span> Change is inevitable, 
               essential even, I've grown to be adaptable. I enjoy the hours I spend researching new
