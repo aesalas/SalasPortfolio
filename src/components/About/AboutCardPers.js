@@ -32,7 +32,7 @@ function AboutCardPers() {
           <p style={{paddingLeft:30}}>
             I love learning, and as a result, I've gone through many 
             hobbies. In general, I am drawn to activities that require some 
-            level of creativity, such as gardening, knitting, painting, writing, 
+            level of creativity, such as puzzle solving, knitting, painting, writing, 
             sewing, running, dancing, Lego building, and so on.
             </p>
 
@@ -48,7 +48,7 @@ function AboutCardPers() {
             <br />
             <p style={{paddingLeft:30}}>
               I was first introduced to digital media in high school. Since then, 
-              I've created countless pieces, from photo editing to logos, combining 
+              I've created countless pieces, from photo editing to designing logos, combining 
               my love for creating with my love for technology.  
             </p>
       </Card.Body>
