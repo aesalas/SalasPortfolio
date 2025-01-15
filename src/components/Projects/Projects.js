@@ -20,6 +20,28 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </h4>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PPWeb}
+              title="Personal Portfolio"
+              description="Website designed to showcase my development skills and certifications. Improved my 
+                frontend development and React development skills. I also learned how to host my website and purchase a domain."
+              demoLink="https://alexandrasalas.dev/"
+              ghLink="https://github.com/aesalas/SalasPortfolio"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LABcookie}
+              title="Life's A Batch Baking Co."
+              description="Website designed for a monthly cookie drop by life's a batch baking co. 
+                Utilited for farmers market to hold ingredients and different flavors. Improved my 
+                frontend development skills and improved SEO and web optimization"
+              demoLink="https://www.lifesabatchbakingco.com/"
+            />
+          </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -55,27 +77,7 @@ function Projects() {
               demoLink="https://waveportal-starter-project.alexandrasalas1.repl.co/"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={LABcookie}
-              title="Life's A Batch Baking Co."
-              description="Website designed for a monthly cookie drop by life's a batch baking co. 
-                Utilited for farmers market to hold ingredients and different flavors. Improved my 
-                frontend development skills and improved SEO and web optimization"
-              demoLink="https://www.lifesabatchbakingco.com/"
-            />
-          </Col>
-                
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={PPWeb}
-              title="Personal Portfolio"
-              description="Website designed to showcase my development skills and certifications. Improved my 
-                frontend development and React development skills. I also learned how to host my own website and purchase my own domain."
-              demoLink="https://alexandrasalas.dev/"
-            />
-          </Col>
-          
+
         </Row>
       </Container>
     </Container>
