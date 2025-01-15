@@ -22,7 +22,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={PPWeb}
+              imgPath={PPweb}
               title="Personal Portfolio"
               description="Website designed to showcase my development skills and certifications. Improved my 
                 frontend development and React development skills. I also learned how to host my website and purchase a domain."
