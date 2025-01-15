@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCards";
 import wave from "../../Assets/Projects/waveportal.png";
 import autoTest from "../../Assets/Projects/AutoTest.png";
 import watsonAssist from "../../Assets/Projects/watsonAssist.png";
+import LABcookie from "../../Assets/Projects/LABcookie.png";
+import PPweb from "../../Assets/Projects/PPweb.png";
 
 
 function Projects() {
@@ -51,6 +53,26 @@ function Projects() {
               Wrote and deployed a smart contract to the blockchain and built a
               client app to allow interactions with the smart contract."
               demoLink="https://waveportal-starter-project.alexandrasalas1.repl.co/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LABcookie}
+              title="Life's A Batch Baking Co."
+              description="Website designed for a monthly cookie drop by life's a batch baking co. 
+                Utilited for farmers market to hold ingredients and different flavors. Improved my 
+                frontend development skills and improved SEO and web optimization"
+              demoLink="https://www.lifesabatchbakingco.com/"
+            />
+          </Col>
+                
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PPWeb}
+              title="Personal Portfolio"
+              description="Website designed to showcase my development skills and certifications. Improved my 
+                frontend development and React development skills. I also learned how to host my own website and purchase my own domain."
+              demoLink="https://alexandrasalas.dev/"
             />
           </Col>
           
