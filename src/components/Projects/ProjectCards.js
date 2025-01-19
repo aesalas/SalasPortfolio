@@ -23,6 +23,7 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
+
             {"Demo "}&nbsp;
             <BsBoxArrowUpRight /> 
             
@@ -31,11 +32,15 @@ function ProjectCards(props) {
 
         {/* If the component contains Github link */}
         {props.ghLink && (
-          <Button variant="primary" 
-	   href={props.ghLink} 
-	   target="_blank" 
-	   style="margin:5px;">
+          <Button 
+            variant="primary" 
+	          href={props.ghLink} 
+	          target="_blank" 
+	          style={{ marginLeft: "5px" }}
+          >
+          
           <BsGithub/> &nbsp; GitHub
+
         </Button>
         )}
 
@@ -46,8 +51,7 @@ function ProjectCards(props) {
         </Button>
         )}
 
-        
-
+      
       </Card.Body>
     </Card>
   );
