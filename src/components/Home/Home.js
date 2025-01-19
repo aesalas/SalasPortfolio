@@ -13,13 +13,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row xs={1} md={2}>
-            <Col >
-              <img 
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-              />
-            </Col>
+          
             <Col className="home-header">
               <Row>
                 <Col md={4}>
@@ -29,12 +23,13 @@ function Home() {
                 </Col>
               </Row>
               <Row>
-                <Col style={{ padding: "25px 0px"}}>
-                  <h1 className="heading-name">
-                    <strong className="main-name"> 
-                      Alexandra Salas
-                    </strong>  
-                  </h1>
+                <Col md={{ span: 6, offset: 3 }} >
+                  <img 
+                	src={homeLogo}
+                	alt="home pic"
+                	className="img-fluid"
+                  />
+
                 </Col>
               </Row>
               <Row>

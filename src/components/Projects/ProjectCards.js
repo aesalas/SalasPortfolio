@@ -31,7 +31,10 @@ function ProjectCards(props) {
 
         {/* If the component contains Github link */}
         {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
+          <Button variant="primary" 
+	   href={props.ghLink} 
+	   target="_blank" 
+	   style="margin:5px;">
           <BsGithub/> &nbsp; GitHub
         </Button>
         )}
