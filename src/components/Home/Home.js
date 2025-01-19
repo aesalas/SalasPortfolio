@@ -23,7 +23,7 @@ function Home() {
                 </Col>
               </Row>
               <Row>
-                <Col md={{ span: 6, offset: 3 }} >
+                <Col>
                   <img 
                 	src={homeLogo}
                 	alt="home pic"
