@@ -272,10 +272,10 @@ button:focus {
 }
 
 .home-contact {
-  text-align: center !important;
- padding: 1rem;
- background-color: var(--background2);
- padding-bottom: 30px !important;
+text-align: center !important;
+ padding: 30px;
+
+
  color: var(--accent1);
 }
 
@@ -310,6 +310,7 @@ button:focus {
     display: inline-block;
     font-size: 1.2rem;
     margin-bottom: 6px;
+    margin-top: 6px;
   }
   .submit-btn{
     text-align: center;

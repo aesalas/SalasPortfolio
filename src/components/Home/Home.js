@@ -32,7 +32,7 @@ function Home() {
                 </Col>
               </Row>
               <Row>
-                <Col md={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 8, offset: 3 }}>
                   <h2><Type /></h2>
                 </Col>
               </Row>
@@ -57,9 +57,7 @@ function Home() {
             </Row>
         </Container>
       </Container>
-      <div className="home-contact">
-        
-      </div>
+
     </section>
   );
 }
