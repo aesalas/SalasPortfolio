@@ -231,7 +231,7 @@ button:focus {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
+
 }
 
 .home-content {
@@ -274,8 +274,6 @@ button:focus {
 .home-contact {
 text-align: center !important;
  padding: 30px;
-
-
  color: var(--accent1);
 }
 
