@@ -19,8 +19,10 @@ function Projects() {
         <h4>
           Here are a few projects I've worked on recently.
         </h4>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col md={4} className="project-card">
+            
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={PPweb}
               title="Personal Portfolio"
