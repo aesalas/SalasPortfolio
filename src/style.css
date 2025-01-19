@@ -3,20 +3,20 @@
 .theme-light {
   --background1: #7f7fa2;
   --background2:#a499ba;
-  --accent1: #f6f1e3;
-  --accent2: #ffeac6;
+  --accent1: #e592a0;
+  --accent2: #f6f1e3;
   --accent3:#F3D5A5;
 
   --accent3-highlight: #F8E6C9; 
   --background1-shadow: #786a94;
 
-  --text-color: black;
+  --text-color: white;
 }
 
 .theme-dark{
-  --background1: #839cdb;
-  --background2:#a0b3e4;
-  --accent1: #e592a0;
+  --background1: #F6E5E0;
+  --background2:#EDCAC0;
+  --accent1: #284e9d;
   --accent2: #000F14;
   --accent3:#284e9d;
 
