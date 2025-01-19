@@ -12,7 +12,7 @@ function Home() {
     <section>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
-          <Row xs={1} md={2}>
+
           
             <Col className="home-header">
               <Row>
@@ -46,7 +46,7 @@ function Home() {
                 </Col>
               </Row>
             </Col>
-          </Row>
+
         </Container>
       </Container>
       <div className="home-contact">
