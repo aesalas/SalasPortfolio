@@ -81,7 +81,12 @@ function Projects() {
             />
           </Col>
           <Col md={4} className="game-card">
-            <TicTac/>
+            <Card className="project-card-view">
+              <Card.Body>
+                <Card.Title> Tic Tac Toe </Card.Title>
+                  <TicTac/>
+                </Card.Body>
+            </Card>
           </Col>
 
         </Row>
