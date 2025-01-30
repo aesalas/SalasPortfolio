@@ -30,15 +30,6 @@ function Home() {
                   />
 
                 </Col>
-                <Col className = "home-contact">
-              <Col className="home-about-social">
-              <h1>Contact</h1>
-                <p>Connect with me on LinkedIn or fill out the form to send me an email!</p>
-                
-                  <ContactForm/>
-                
-              </Col>
-            </Col>
               </Row>
               <Row>
                 <Col md={{ span: 8, offset: 3 }}>
@@ -54,22 +45,16 @@ function Home() {
                 </Col>
               </Row>
             </Col>
-            
-            </Row>
-        </Container>
-      </Container>
-      <div className="home-contact">
-
-              <Col className="home-about-social">
+            <Col className="home-about-social">
               <h1>Contact</h1>
                 <p>Connect with me on LinkedIn or fill out the form to send me an email!</p>
                 
                   <ContactForm/>
                 
               </Col>
-
-      </div>
-
+          </Row>
+        </Container>
+      </Container>
     </section>
   );
 }

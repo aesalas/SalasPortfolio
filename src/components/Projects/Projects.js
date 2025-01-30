@@ -80,10 +80,8 @@ function Projects() {
               demoLink="https://waveportal-starter-project.alexandrasalas1.repl.co/"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <TicTac
-              
-            />
+          <Col md={4} className="game-card">
+            <TicTac/>
           </Col>
 
         </Row>
