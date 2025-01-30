@@ -58,6 +58,17 @@ function Home() {
             </Row>
         </Container>
       </Container>
+      <div className="home-contact">
+
+              <Col className="home-about-social">
+              <h1>Contact</h1>
+                <p>Connect with me on LinkedIn or fill out the form to send me an email!</p>
+                
+                  <ContactForm/>
+                
+              </Col>
+
+      </div>
 
     </section>
   );
