@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 import ProjectCard from "./ProjectCards";
 import TicTac from "./TicTac"
 import wave from "../../Assets/Projects/waveportal.png";
