@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
+import TicTac from "./TicTac"
 import wave from "../../Assets/Projects/waveportal.png";
 import autoTest from "../../Assets/Projects/AutoTest.png";
 import watsonAssist from "../../Assets/Projects/watsonAssist.png";
@@ -77,6 +78,11 @@ function Projects() {
               Wrote and deployed a smart contract to the blockchain and built a
               client app to allow interactions with the smart contract."
               demoLink="https://waveportal-starter-project.alexandrasalas1.repl.co/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <TicTac
+              
             />
           </Col>
 
