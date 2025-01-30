@@ -603,6 +603,7 @@ text-align: center !important;
 .game-board{
   background-image: var(--section-background-color) !important;
   color: var(--text-color);
+  height: fit-content;
 }
 
 .game-card{
