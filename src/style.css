@@ -600,16 +600,30 @@ text-align: center !important;
 /*           Tic Tac Toe Game                */
 /* ----------------------------------------- */
 
-.game-board{
-  background-image: var(--section-background-color) !important;
-  color: var(--text-color);
-  height: fit-content;
-}
-
 .game-card{
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
+  color: var(--text-color);
 
+}
+.status{
+  font-size: 1.5em;
+  color: var(--accent1);
+  padding: 10px;
+}
+
+.square {
+  background: var(--accent1);
+  border: 2px solid var(--accent3-highlight);
+  font-size: 34px;
+  font-weight: bold;
+  height: 68px;
+  text-align: center;
+  width: 68px;
+}
+.padding-0{
+  padding-right:0;
+  padding-left:0;
 }
