@@ -22,7 +22,7 @@ function AboutCardPers() {
           <br />
           <p style={{paddingLeft:30}}>
             Luckily, I grew up with parents who valued experiences 
-            over tangible objects, so I've been traveling since before 
+            over brands, so I've been traveling since before 
             I could remember. My favorite trip so far has been the cruise 
             we took through Alaska and Canada, passing through Glacier National Park.
           </p>
@@ -30,7 +30,7 @@ function AboutCardPers() {
         <span className="about-pers-heading"> <GiButterfly/> Collector of Hobbies </span>
           <br />
           <p style={{paddingLeft:30}}>
-            I love learning, and as a result, I've gone through many 
+            I love learning, so as a result, I've gone through many 
             hobbies. In general, I am drawn to activities that require some 
             level of creativity, such as puzzle solving, knitting, painting, writing, 
             sewing, running, dancing, Lego building, and so on.
@@ -39,7 +39,7 @@ function AboutCardPers() {
         <span className="about-pers-heading">  <GiButterfly/> Cat Mom </span>
           <br />
           <p style={{paddingLeft:30}}> 
-            I adopted Kitty about 8 years ago, and we've been inseparable 
+            I adopted Kitty about 9 years ago, and we've been inseparable 
             since. Whether I'm reading on the couch or programming in the 
             patio, kitty is usually sleeping on or near me.
           </p>

@@ -84,7 +84,7 @@ export default function Game() {
       <Row className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </Row>
-
+        <p></p>
         <Button onClick={() => setHistory([Array(9).fill(null)])}>
             Reset
           </Button>

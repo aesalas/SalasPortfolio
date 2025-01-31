@@ -14,7 +14,8 @@ function ProjectCards(props) {
         </Card.Text>
         {"\n"}
         {"\n"}
-
+        </Card.Body>
+        <Card.Footer>
         {/* If the component contains Demo link */}
         {props.demoLink && (
           <Button
@@ -52,7 +53,7 @@ function ProjectCards(props) {
         )}
 
       
-      </Card.Body>
+      </Card.Footer>
     </Card>
   );
 }
