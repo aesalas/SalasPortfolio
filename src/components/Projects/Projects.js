@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import ProjectCard from "./ProjectCards";
 import TicTac from "./TicTac"
@@ -8,6 +8,7 @@ import autoTest from "../../Assets/Projects/AutoTest.png";
 import watsonAssist from "../../Assets/Projects/watsonAssist.png";
 import LABcookie from "../../Assets/Projects/LABcookie.png";
 import PPweb from "../../Assets/Projects/PPweb.png";
+import { BsGithub } from "react-icons/bs";
 
 
 function Projects() {
@@ -83,10 +84,26 @@ function Projects() {
           </Col>
           <Col md={4} className="game-card">
             <Card className="project-card-view">
-              <Card.Body>
+              <Card.Body>  
+                <TicTac/>
+                <p></p>
                 <Card.Title> Tic Tac Toe </Card.Title>
-                  <TicTac/>
-                </Card.Body>
+                <p>
+                  A simple Tic Tac Toe game built with React. Play against a friend and see who gets three in a row first!
+                </p>
+              </Card.Body>
+              <Card.Footer>
+                <Button 
+                    variant="primary" 
+                    href="https://github.com/aesalas/SalasPortfolio/blob/main/src/components/Projects/TicTac.js" 
+                    target="_blank" 
+                    style={{ marginLeft: "5px" }}
+                  >
+                  
+                  <BsGithub/> &nbsp; GitHub
+
+                </Button>
+              </Card.Footer>
             </Card>
           </Col>
 
