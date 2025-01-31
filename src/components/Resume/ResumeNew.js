@@ -39,11 +39,11 @@ return (
                   </li>
                         </ul>
               <h3> <strong className="popOColor"> Person Portfolio Website</strong>
-               <br /> <i>Personal Project, August 2022 – February 2023</i></h3>
+               <br /> <i>Personal Project, August 2022</i></h3>
                 <ul className="resume-list">
                     <li >
                         Designed and developed website to showcase programming projects and skills and hosted with
-                        a custom domain using Netlify.
+                        a custom domain using Netlify. Continuously maintaining and updating.
                     </li>
                     <li>
                         Implemented Search Engine Optimization (SEO) strategies using Reactjs, GitHub, Visual Studio
@@ -135,6 +135,9 @@ return (
                 </li>
                 <li >
                     Introduction to Enterprise-grade AI, IBM
+                </li>
+                <li >
+                  Professional Claims Adjuster All Lines, 2023-Present - License number: G015519
                 </li>
               </ul>
             </Accordion.Body>
