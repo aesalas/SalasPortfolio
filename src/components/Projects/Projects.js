@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import ProjectCard from "./ProjectCards";
 import TicTac from "./TicTac"
+import Scramble from "./Scramble"
 import wave from "../../Assets/Projects/waveportal.png";
 import autoTest from "../../Assets/Projects/AutoTest.png";
 import watsonAssist from "../../Assets/Projects/watsonAssist.png";
@@ -24,7 +25,7 @@ function Projects() {
         </h4>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            
+          {/*PP project card*/}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={PPweb}
@@ -35,7 +36,7 @@ function Projects() {
               ghLink="https://github.com/aesalas/SalasPortfolio"
             />
           </Col>
-          
+          {/*LAB project card*/}          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={LABcookie}
@@ -45,9 +46,8 @@ function Projects() {
                 frontend development skills and improved SEO and web optimization"
               demoLink="https://www.lifesabatchbakingco.com/"
             />
-          </Col>
-          
-
+          </Col>         
+          {/*ATF project card*/}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={autoTest}
@@ -59,7 +59,7 @@ function Projects() {
                produce reports."
               />
           </Col>
-
+          {/*Watson project card*/}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={watsonAssist}
@@ -71,7 +71,7 @@ function Projects() {
               demoLink="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-62a2d422-ea9e-4390-b4b5-9d83ede44e70%3A%3Aba220f89-0579-4530-b46f-075c7d28c9df&integrationID=831023cd-bd85-4122-8470-783a0e8f49a6&region=au-syd&serviceInstanceID=62a2d422-ea9e-4390-b4b5-9d83ede44e70"
             />
           </Col>
-
+          {/*Wave portal project card*/}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={wave}
@@ -82,6 +82,7 @@ function Projects() {
               demoLink="https://waveportal-starter-project.alexandrasalas1.repl.co/"
             />
           </Col>
+          {/*TTT game project card*/}
           <Col md={4} className="game-card">
             <Card className="project-card-view">
               <Card.Body>  
@@ -90,6 +91,31 @@ function Projects() {
                 <Card.Title> Tic Tac Toe </Card.Title>
                 <p>
                   A simple Tic Tac Toe game built with React. Play against a friend and see who gets three in a row first!
+                </p>
+              </Card.Body>
+              <Card.Footer>
+                <Button 
+                    variant="primary" 
+                    href="https://github.com/aesalas/SalasPortfolio/blob/main/src/components/Projects/TicTac.js" 
+                    target="_blank" 
+                    style={{ marginLeft: "5px" }}
+                  >
+                  
+                  <BsGithub/> &nbsp; GitHub
+
+                </Button>
+              </Card.Footer>
+            </Card>
+          </Col>
+          {/*Scramble game project card*/}
+          <Col md={4} className="game-card">
+            <Card className="project-card-view">
+              <Card.Body>  
+                <Scramble/>
+                <p></p>
+                <Card.Title> Word Scramble </Card.Title>
+                <p>
+                  A simple word scramble game built with HTML/CSS and Javascript. Unscramble the letters to form a word and test your vocabulary skills!
                 </p>
               </Card.Body>
               <Card.Footer>

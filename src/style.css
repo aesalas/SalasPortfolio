@@ -510,6 +510,7 @@ text-align: center !important;
   padding-right: 25px !important;
   height: auto !important;
 }
+
 .project-card-view {
   box-shadow: 0 4px 5px 3px var(--accent3) !important;
   color: var(--text-color) !important;
@@ -520,9 +521,11 @@ text-align: center !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
+  transition: all 0.5s ease 0s !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px var(--accent3-highlight) !important;
 }
+
 .card-img-top {
   padding: 20px !important;
   opacity: 0.8 !important;
@@ -646,4 +649,30 @@ text-align: center !important;
 .flex{
   display: flex;
   justify-content: center;
+}
+
+/*------------------------------------------ */
+/*            Word Scramble                  */
+/*------------------------------------------ */
+.word-scramble-card{
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  color: var(--text-color);
+}
+
+.comment_element{
+    display: inline-block;
+    padding: 10px;
+    border: none;
+}
+
+.comment_input {
+    width: 250px;
+}
+.divider{
+  width:2px;
+  height:auto;
+  display:inline-block;
 }
