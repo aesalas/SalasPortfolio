@@ -121,7 +121,7 @@ function Projects() {
               <Card.Footer>
                 <Button 
                     variant="primary" 
-                    href="https://github.com/aesalas/SalasPortfolio/blob/main/src/components/Projects/TicTac.js" 
+                    href="https://github.com/aesalas/SalasPortfolio/blob/main/src/components/Projects/Scramble.js" 
                     target="_blank" 
                     style={{ marginLeft: "5px" }}
                   >
