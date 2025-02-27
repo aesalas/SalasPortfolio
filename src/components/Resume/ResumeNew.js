@@ -18,8 +18,9 @@ return (
           <Accordion.Item eventKey="0">
             <Accordion.Header><h3> Experience and Projects </h3></Accordion.Header>
               <Accordion.Body>
-              <h3> <strong className="popOColor"> Auto Test Fixture</strong>  American Traction Systems/Saminco <br/> 
-              <i>Senior project, Sept 2021 – May 2022</i></h3>
+
+              {/***** ATF *****/}
+              <h3> <strong className="popOColor"> Auto Test Fixture</strong>  American Traction Systems/Saminco <br/> <i>Senior project, Sept 2021 – May 2022</i></h3>
                 <ul className="resume-list">
                   <li >
                     Worked in a team of five using agile methodology to complete
@@ -37,9 +38,9 @@ return (
                       Utilized .NET Core/C#, Electron.NET, Docker, HTML/CSS, 
                       Angular/Nebular, SQLite, Node.JS, GitHub, and Visual studios IDE
                   </li>
-                        </ul>
-              <h3> <strong className="popOColor"> Person Portfolio Website</strong>
-               <br /> <i>Personal Project, August 2022</i></h3>
+                </ul>
+              {/***** PP *****/}
+              <h3> <strong className="popOColor"> Person Portfolio Website</strong>  <br /> <i>Personal Project, August 2022</i></h3>
                 <ul className="resume-list">
                     <li >
                         Designed and developed website to showcase programming projects and skills and hosted with
@@ -48,12 +49,11 @@ return (
                     <li>
                         Implemented Search Engine Optimization (SEO) strategies using Reactjs, GitHub, Visual Studio
                         to create an interactive and responsive user interface.
-
                     </li>
                 </ul>
 
-              <h3> <strong className="popOColor"> Cookie Bakery Web Application</strong>,  Life's a Batch Baking Co 
-              <br/> <i>Freelance, August 2024</i></h3>
+              {/***** LAB *****/}
+              <h3> <strong className="popOColor"> Cookie Bakery Web Application</strong>,  Life's a Batch Baking Co. <br/> <i>Freelance, August 2024</i></h3>
                 <ul className="resume-list">
                   <li >
                     Designed, developed and currently maintaining website to display menu for farmers markets.
@@ -62,18 +62,20 @@ return (
                     Utilized Frontend development styles, Web optimization, Photoshop, Canva, Search Engine Optimization
                   </li>
                 </ul>
-
+              
+              {/***** Web3 *****/}
               <h3> <strong className="popOColor">Web3 Client Application </strong> <br/> <i>Personal Project, August 2022</i></h3>
-                <ul className="resume-list">
+              <ul className="resume-list">
                   <li >
                     Wrote and deployed a smart contract in solidity to the blockchain and built a Web3 client app to allow interactions with the smart contract.
                   </li>
                   <li>
                     Utilized Solidity, Replit, Ethereum, Ethereum test networks, Reactjsx
                   </li>
-                </ul>
+              </ul>
 
-                        <h3> <strong className="popOColor">Adjuster Assistant / QA Examiner</strong>, Vas Claim Adjusters <br/> <i>June 2020 – Present</i></h3>
+                {/***** QA *****/}
+                <h3> <strong className="popOColor">Adjuster Assistant / QA Examiner</strong>, Vas Claim Adjusters <br/> <i>June 2020 – June 2022</i></h3>
                 <ul className="resume-list">
                   <li >
                       Used Xactanalysis/Xactimate software to review final reports for errors prior to submission.
@@ -81,34 +83,38 @@ return (
                   <li>
                       Prepared, reviewed, and summarized declaration page and prior estimates to prepare inspector for inspection.
                   </li>
-                  
                 </ul>
-                        <h3> <strong className="popOColor">Desk Reviewer</strong>, Evolv Claim Solutions <br/> <i>June 2020 – Present</i></h3>
+
+                {/***** QA - Evolv *****/}
+                <h3> <strong className="popOColor">QA Reviewer</strong>, Evolv Claim Solutions <br/> <i>June 2022 – Present</i></h3>
                 <ul className="resume-list">
                   <li >
-                     Learned Symbility software to review and edit files to minimize errors and provide Quality assurance prior to generating final report packages to send to carriers.  
+                     Learned Symbility software to review and edit files to minimize errors and provide Quality assurance prior to generating final report packages to send to carriers.
+                  </li> 
+                  <li>
+                  Train and manage new hires, providing support during the onboarding process.
                   </li>                  
                 </ul>                              
 
               </Accordion.Body>
           </Accordion.Item>
 
-          {/***** Skills and Qualities *****/}
+          {/***** Skills *****/}
           <Accordion.Item eventKey="1" flush>
-          <Accordion.Header><h3> Skills and Qualities</h3></Accordion.Header>
+          <Accordion.Header><h3> Technical Skills </h3></Accordion.Header>
             <Accordion.Body>
               <ul className="resume-list">
                 <li >
-                  Programming experience in Java, JavaFX, JavaScript, C/C++, Python, SQL, HTML/CSS, .NET framework, C#, Solidity, Reactjs
-
+                Programming Languages: JavaScript, TypeScript, C++, Java, C#, Python, SQL, Solidity, HTML/CSS
                 </li>
                 <li>
-                Completed coursework includes Requirements engineering, Data engineering, Computer Assembly Language, Cloud technology, Object-Oriented Programming, Software Security, Blockchain Applications, programming methodologies, and Data Structures and Algorithms
-
+                Frameworks & Tools: React.js, Angular, .NET Core, Node.js, Electron.NET, Docker, SQLite, Git/GitHub
                 </li>
-                
                 <li>
-                Educated in Adobe Photoshop, Adobe Illustrator, Atlassian (Jira and Confluence), Git/Github
+                Software & Platforms: Adobe Photoshop, Adobe Illustrator, Atlassian (Jira, Confluence), Symbility, Xactware
+                </li>
+                <li>  
+                Development Concepts: Agile Methodology, Requirements Engineering, Data Engineering, Cloud Technology
                 </li>
               </ul>
             </Accordion.Body>
@@ -118,11 +124,13 @@ return (
           <Accordion.Item eventKey="2" flush>
           <Accordion.Header><h3> Education </h3></Accordion.Header>
             <Accordion.Body>
-              <ul className="resume-list">
-                <li >
-                                Florida Gulf Coast University, Bachelor of Science in Software Engineering with Mathematics minor, Magna Cum Laude, First-generation college graduate
-                </li>
-                </ul>
+              <h3> <strong className="popOColor"> Florida Gulf Coast University	</strong> <i>Fort Myers, FL</i> </h3>
+              <p className="resume-list">
+              Bachelor of Science in Software Engineering, Minor in Mathematics
+              <br/><i>GPA: 3.8, Graduated Magna Cum Laude: May 2022</i>
+              <br/> <strong className="popOColor">Relevant Coursework: </strong> Software Engineering, Database Management Systems, Web Development, Operating Systems, Computer Networks, Software Testing and 
+              Quality Assurance, Requirements engineering, Data engineering, Cloud technology, Object-Oriented Programming, Data Structures and Algorithms.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           {/***** Awards and Achievements *****/}
@@ -137,7 +145,13 @@ return (
                     Introduction to Enterprise-grade AI, IBM
                 </li>
                 <li >
-                  Professional Claims Adjuster All Lines, 2023-Present - License number: G015519
+                    Entrepreneurial Mindset Badge, FGCU
+                </li>
+                <li>
+                  Pandas Certificate, Kaggle 
+                </li>
+                <li>
+                  Python Certificate, Kaggle 
                 </li>
               </ul>
             </Accordion.Body>
