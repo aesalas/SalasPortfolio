@@ -20,7 +20,7 @@ return (
               <Accordion.Body>
 
               {/***** ATF *****/}
-              <h3> <strong className="popOColor"> Auto Test Fixture</strong>  American Traction Systems/Saminco <br/> <i>Senior project, Sept 2021 – May 2022</i></h3>
+              <h3> <strong className="popOColor"> Auto Test Fixture,</strong>  American Traction Systems/Saminco <br/> <i>Senior project, Sept 2021 – May 2022</i></h3>
                 <ul className="resume-list">
                   <li >
                     Worked in a team of five using agile methodology to complete
@@ -53,7 +53,7 @@ return (
                 </ul>
 
               {/***** LAB *****/}
-              <h3> <strong className="popOColor"> Cookie Bakery Web Application</strong>,  Life's a Batch Baking Co. <br/> <i>Freelance, August 2024</i></h3>
+              <h3> <strong className="popOColor"> Freelance Web Developer </strong>,  Life's a Batch Baking Co. <br/> <i>Freelance, August 2024</i></h3>
                 <ul className="resume-list">
                   <li >
                     Designed, developed and currently maintaining website to display menu for farmers markets.
@@ -103,20 +103,20 @@ return (
           <Accordion.Item eventKey="1" flush>
           <Accordion.Header><h3> Technical Skills </h3></Accordion.Header>
             <Accordion.Body>
-              <ul className="resume-list">
-                <li >
-                Programming Languages: JavaScript, TypeScript, C++, Java, C#, Python, SQL, Solidity, HTML/CSS
-                </li>
-                <li>
-                Frameworks & Tools: React.js, Angular, .NET Core, Node.js, Electron.NET, Docker, SQLite, Git/GitHub
-                </li>
-                <li>
-                Software & Platforms: Adobe Photoshop, Adobe Illustrator, Atlassian (Jira, Confluence), Symbility, Xactware
-                </li>
-                <li>  
-                Development Concepts: Agile Methodology, Requirements Engineering, Data Engineering, Cloud Technology
-                </li>
-              </ul>
+              <p className="resume-list">
+                <strong className="popOColor">Programming Languages: </strong>
+                JavaScript, TypeScript, C++, Java, C#, Python, SQL, Solidity, HTML/CSS
+                <br/>
+                <strong className="popOColor">Frameworks & Tools: </strong>
+                React.js, Angular, .NET Core, Node.js, Electron.NET, Docker, SQLite, Git/GitHub
+                <br/>
+                <strong className="popOColor">Software & Platforms: </strong>
+                Adobe Photoshop, Adobe Illustrator, Atlassian (Jira, Confluence), Symbility, Xactware
+                <br/>
+                <strong className="popOColor">Development Concepts: </strong>
+                Agile Methodology, Requirements Engineering, Data Engineering, Cloud Technology, Data Structures and Algorithms, Object-Oriented Programming, Software Testing and Quality Assurance
+                
+              </p>
             </Accordion.Body>
           </Accordion.Item>
 
