@@ -111,10 +111,10 @@ return (
                 React.js, Angular, .NET Core, Node.js, Electron.NET, Docker, SQLite, Git/GitHub
                 <br/>
                 <strong className="popOColor">Software & Platforms: </strong>
-                VScode, IntelliJ, Pycharm, Adobe Photoshop, Adobe Illustrator, Atlassian (Jira, Confluence), Symbility, Xactware
+                VScode, IntelliJ, Pycharm, Adobe Photoshop, Adobe Illustrator, Atlassian (Jira, Confluence), Symbility, Xactware, ChatGPT, Gemini, Github Copilot, OpenAI, Watson
                 <br/>
                 <strong className="popOColor">Development Concepts: </strong>
-                Agile Methodology, Requirements Engineering, Data Engineering, Cloud Technology, Data Structures and Algorithms, Object-Oriented Programming, Software Testing and Quality Assurance
+                Agile Methodology, Requirements Engineering, Data Engineering, Machine Learning/AI, Cloud Technology, Data Structures and Algorithms, Object-Oriented Programming, Software Testing and Quality Assurance
                 
               </p>
             </Accordion.Body>
