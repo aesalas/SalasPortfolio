@@ -111,7 +111,7 @@ return (
                 React.js, Angular, .NET Core, Node.js, Electron.NET, Docker, SQLite, Git/GitHub
                 <br/>
                 <strong className="popOColor">Software & Platforms: </strong>
-                Adobe Photoshop, Adobe Illustrator, Atlassian (Jira, Confluence), Symbility, Xactware
+                VScode, IntelliJ, Pycharm, Adobe Photoshop, Adobe Illustrator, Atlassian (Jira, Confluence), Symbility, Xactware
                 <br/>
                 <strong className="popOColor">Development Concepts: </strong>
                 Agile Methodology, Requirements Engineering, Data Engineering, Cloud Technology, Data Structures and Algorithms, Object-Oriented Programming, Software Testing and Quality Assurance
@@ -133,6 +133,7 @@ return (
               </p>
             </Accordion.Body>
           </Accordion.Item>
+
           {/***** Awards and Achievements *****/}
           <Accordion.Item eventKey="3" flush>
           <Accordion.Header><h3>  Certifications and Licenses </h3></Accordion.Header>
@@ -148,7 +149,7 @@ return (
                     Entrepreneurial Mindset Badge, FGCU
                 </li>
                 <li>
-                  Pandas Certificate, Kaggle 
+                    Pandas Certificate, Kaggle 
                 </li>
                 <li>
                   Python Certificate, Kaggle 
