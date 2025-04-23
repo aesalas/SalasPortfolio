@@ -1,9 +1,22 @@
 import React from "react";
-import { Container, Row, Accordion, Col } from "react-bootstrap";
+import { Container, Row, Accordion, Col, Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/Alexandra_Salas_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import ContactForm from '../ContactForm';
+import Flicking from "@egjs/react-flicking";
+import "@egjs/react-flicking/dist/flicking.css";
+
+/* import images */
+import adjust from "../../Assets/Certs/adjuster.jpg";
+import AiEnt from "../../Assets/Certs/ai enterprise.jpg";
+import entre from "../../Assets/Certs/entrepnuer.jpg";
+import ml from "../../Assets/Certs/ml.png";
+import pndas from "../../Assets/Certs/pandas.png";
+import py from "../../Assets/Certs/python.png";
+import Certs from "./Certs";
+import introSQL from "../../Assets/Certs/IntroSQL.png";
+
 
 function ResumeNew() {
 return (
@@ -15,6 +28,7 @@ return (
         <Accordion defaultActiveKey="0" flush >
       
           {/***** Experience and projects *****/}
+          
           <Accordion.Item eventKey="0">
             <Accordion.Header><h3> Experience and Projects </h3></Accordion.Header>
               <Accordion.Body>
@@ -134,27 +148,84 @@ return (
             </Accordion.Body>
           </Accordion.Item>
 
-          {/***** Awards and Achievements *****/}
+          {/***** Certifications and license *****/}
           <Accordion.Item eventKey="3" flush>
           <Accordion.Header><h3>  Certifications and Licenses </h3></Accordion.Header>
             <Accordion.Body>
-            <ul className="resume-list">
-                <li >
-                    Professional Claims Adjuster All Lines License, 2023-Present
-                </li>
-                <li >
-                    Introduction to Enterprise-grade AI, IBM
-                </li>
-                <li >
-                    Entrepreneurial Mindset Badge, FGCU
-                </li>
-                <li>
-                    Pandas Certificate, Kaggle 
-                </li>
-                <li>
-                  Python Certificate, Kaggle 
-                </li>
-              </ul>
+              <Flicking
+              align="prev"
+              autoResize= {true}
+              circular={true}
+              className="resume-list"
+              onMoveEnd={e => {
+                console.log(e);
+                }}>
+
+              <div style={{width: "500px" }}>
+                <Certs
+                  imgPath={adjust}
+                  title="Professional Claims Adjuster All Lines License"
+                  description="2023-Present"
+                />
+              </div>
+
+              <div style={{ width: "500px"}}>
+                <Certs
+                  imgPath={AiEnt}
+                  title="Introduction to Enterprise-grade AI"
+                  description="IBM course that taught me the fundamentals of artificial intelligence for business 
+                  along with topics including virtual agents, NLP, industry adoption trends, and AI evolution."
+                />
+              </div>
+              <div style={{ width: "500px" }}>
+                <Certs
+                  imgPath={entre}
+                  title="Entrepreunerial Mindset Badge"
+                  description="FGCU provided course where I learned the process of fundamental transformation 
+                  from innovative idea to enterprise and from enterprise to value."
+                />
+              </div>
+              <div style={{ width: "500px" }}>
+                <Certs
+                  imgPath={pndas}
+                  title="Pandas Certificate"
+                  description="Kaggle course that taught me the fundamentals of data manipulation and analysis
+                   using Pandas encompassing data creation, reading, and writing; indexing, selection, and assignment; 
+                   summary functions and mapping; grouping and sorting; data kinds and handling missing values; 
+                   as well as renaming and combining datasets."
+                />
+              </div>
+              <div style={{width: "500px"}}>
+                <Certs
+                  imgPath={py}
+                  title="Python Certificate"
+                  description="Kaggle course that served as a refresher enabling me to revisit the fundamentals of Python 
+                  programming, encompassing data types, functions, booleans, lists, loops, strings, dictionaries, 
+                  and the utilization of external libraries."
+                />
+              </div>
+              <div style={{ width: "500px"}}>
+                <Certs
+                  imgPath={ml}
+                  title="Intro to Machine Learning Certificate"
+                  description="Kaggle course that instructed me the fundamentals of machine learning, 
+                  encompassing model functionality, fundamental data exploration, construction of a machine learning model, 
+                  model validation, overfitting and underfitting, the random forest technique, and participation in a 
+                  machine learning competition."
+                />
+              </div>
+              <div style={{ width: "500px"}}>
+                <Certs
+                  imgPath={introSQL}
+                  title="Intro to SQL Certificate"
+                  description="Kaggle course that taught me the fundamentals of SQL programming, specifically how to set up 
+                  BigQuery and SQL and the components of Select, From, Where, Group By, Having, Count, order by, As, and With,
+                   as well as how to join data."
+                />
+              </div>
+              
+            </Flicking>
+          
             </Accordion.Body>
           </Accordion.Item>
 
