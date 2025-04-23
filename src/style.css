@@ -572,6 +572,13 @@ text-align: center !important;
 .resume-list{
   font-size: 12pt;
 }
+.resume-card-view {
+
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  height: fit-content !important;
+}
 .accordion{
   margin: 5rem;
   text-align: left;
@@ -615,6 +622,7 @@ text-align: center !important;
 .connect-btn-inner::after {
   display: none !important;
 }
+
 
 /* ----------------------------------------- */
 /*           Tic Tac Toe Game                */
