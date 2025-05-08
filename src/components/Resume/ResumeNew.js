@@ -16,6 +16,7 @@ import pndas from "../../Assets/Certs/pandas.png";
 import py from "../../Assets/Certs/python.png";
 import Certs from "./Certs";
 import introSQL from "../../Assets/Certs/IntroSQL.png";
+import EAJobSim from "../../Assets/Certs/EAJobSim.png";
 
 
 function ResumeNew() {
@@ -221,6 +222,16 @@ return (
                   description="Kaggle course that taught me the fundamentals of SQL programming, specifically how to set up 
                   BigQuery and SQL and the components of Select, From, Where, Group By, Having, Count, order by, As, and With,
                    as well as how to join data."
+                />
+              </div>
+              <div style={{ width: "500px"}}>
+                <Certs
+                  imgPath={EAJobSim}
+                  title="Software Engineering Job Simulation"
+                  description="Proposed a new feature for the EA Sports College Football and wrote a Feature Proposal 
+                  describing it to other stakeholders. Built a class diagram and created a header file in C++ with class 
+                  definitions for each object. Patched a bugfix and optimized the EA Sports College Football codebase by 
+                  implementing an improved data structure."
                 />
               </div>
               
