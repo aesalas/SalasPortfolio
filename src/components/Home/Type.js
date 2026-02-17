@@ -11,6 +11,7 @@ function Type() {
           "Web Developer",
           "Frontend Engineer",
           "Problem Solver",
+          "Data Analyst",
         ],
         autoStart: true,
         loop: true,

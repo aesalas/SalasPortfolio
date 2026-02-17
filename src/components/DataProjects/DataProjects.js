@@ -1,8 +1,8 @@
-import React from "react";
+
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import PPweb from "../../Assets/Projects/PPweb.png";
-import { BsGithub } from "react-icons/bs";
+
 
 
 function DataProjects() {
@@ -19,13 +19,12 @@ function DataProjects() {
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {/*PP project card*/}
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
               imgPath={PPweb}
-              title="Personal Portfolio"
-              description="Website designed to showcase my development skills and certifications. Improved my 
-                frontend development and React development skills. I also learned how to host my website and purchase a domain."
-              demoLink="https://alexandrasalas.dev/"
+              title="TBD"
+              description="TBD"
+              demoLink="https://alexandrasalasdev.netlify.app/"
               ghLink="https://github.com/aesalas/SalasPortfolio"
             />
           </Col>

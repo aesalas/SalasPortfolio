@@ -32,7 +32,7 @@ function Projects() {
               title="Personal Portfolio"
               description="Website designed to showcase my development skills and certifications. Improved my 
                 frontend development and React development skills. I also learned how to host my website and purchase a domain."
-              demoLink="https://alexandrasalas.dev/"
+              demoLink="https://alexandrasalasdev.netlify.app/"
               ghLink="https://github.com/aesalas/SalasPortfolio"
             />
           </Col>

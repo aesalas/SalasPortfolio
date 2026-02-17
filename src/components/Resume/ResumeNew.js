@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Accordion, Col, Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/Alexandra_Salas_Resume.pdf";
@@ -34,8 +33,85 @@ return (
             <Accordion.Header><h3> Experience and Projects </h3></Accordion.Header>
               <Accordion.Body>
 
+                {/***** QA *****/}
+                  <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>
+                    <span style={{flex: 1, textAlign: "left", fontSize: "1.3em", fontWeight: "bold"}}>
+                      <span className="popOColor">QA Examiner</span>
+                    </span>
+                    <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Independent Contractor, June 2020 – Present</i>
+                    </span>
+                  </div>
+                  <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Vas Claim Adjusters, Evolv Claim Solutions, Vector Risk Solutions, Cavalry Claims</i>
+                  </span>
+                <p></p>
+                <ul className="resume-list">
+                  <li >
+                      Reviewed and audited 500+ insurance claim documents monthly for accuracy, completeness, and regulatory compliance 
+                  </li>
+                  <li>
+                      Identified data inconsistencies and discrepancies through detailed document analysis and cross-referencing
+                  </li>
+                </ul>
+
+
+              {/***** PP *****/}
+              <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>
+                    <span style={{flex: 1, textAlign: "left", fontSize: "1.3em", fontWeight: "bold"}}>
+                      <span className="popOColor">Person Portfolio Website</span>
+                    </span>
+                    <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Personal Project, August 2022</i>
+                    </span>
+                  </div>
+                <p></p>
+                <ul className="resume-list">
+                    <li >
+                        Designed and developed website to showcase programming projects and skills and hosted with
+                        a custom domain using Netlify. Continuously maintaining and updating.
+                    </li>
+                    <li>
+                        Implemented Search Engine Optimization (SEO) strategies using Reactjs, GitHub, Visual Studio
+                        to create an interactive and responsive user interface.
+                    </li>
+                </ul>
+
+              {/***** LAB *****/}
+              <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>
+                    <span style={{flex: 1, textAlign: "left", fontSize: "1.3em", fontWeight: "bold"}}>
+                      <span className="popOColor">Web Developer</span>
+                    </span>
+                    <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Freelance, August 2024</i>
+                    </span>
+                  </div>
+                  <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Life's a Batch Baking Co.</i>
+                  </span>                  
+                <p></p>
+                <ul className="resume-list">
+                  <li >
+                    Designed, developed and currently maintaining website to display menu for farmers markets.
+                  </li>
+                  <li>
+                    Utilized Frontend development styles, Web optimization, Photoshop, Canva, Search Engine Optimization
+                  </li>
+                </ul>
+
               {/***** ATF *****/}
-              <h3> <strong className="popOColor"> Auto Test Fixture,</strong>  American Traction Systems/Saminco <br/> <i>Senior project, Sept 2021 – May 2022</i></h3>
+              <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>
+                    <span style={{flex: 1, textAlign: "left", fontSize: "1.3em", fontWeight: "bold"}}>
+                      <span className="popOColor">Auto Test Fixture</span>
+                    </span>
+                    <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Senior project, Sept 2021 – May 2022</i>
+                    </span>
+                  </div>
+                  <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>American Traction Systems/Saminco</i>
+                  </span>                  
+                <p></p>                
                 <ul className="resume-list">
                   <li >
                     Worked in a team of five using agile methodology to complete
@@ -54,32 +130,18 @@ return (
                       Angular/Nebular, SQLite, Node.JS, GitHub, and Visual studios IDE
                   </li>
                 </ul>
-              {/***** PP *****/}
-              <h3> <strong className="popOColor"> Person Portfolio Website</strong>  <br /> <i>Personal Project, August 2022</i></h3>
-                <ul className="resume-list">
-                    <li >
-                        Designed and developed website to showcase programming projects and skills and hosted with
-                        a custom domain using Netlify. Continuously maintaining and updating.
-                    </li>
-                    <li>
-                        Implemented Search Engine Optimization (SEO) strategies using Reactjs, GitHub, Visual Studio
-                        to create an interactive and responsive user interface.
-                    </li>
-                </ul>
 
-              {/***** LAB *****/}
-              <h3> <strong className="popOColor"> Freelance Web Developer </strong>,  Life's a Batch Baking Co. <br/> <i>Freelance, August 2024</i></h3>
-                <ul className="resume-list">
-                  <li >
-                    Designed, developed and currently maintaining website to display menu for farmers markets.
-                  </li>
-                  <li>
-                    Utilized Frontend development styles, Web optimization, Photoshop, Canva, Search Engine Optimization
-                  </li>
-                </ul>
-              
               {/***** Web3 *****/}
-              <h3> <strong className="popOColor">Web3 Client Application </strong> <br/> <i>Personal Project, August 2022</i></h3>
+
+              <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>
+                    <span style={{flex: 1, textAlign: "left", fontSize: "1.3em", fontWeight: "bold"}}>
+                      <span className="popOColor">Web3 Client Application</span>
+                    </span>
+                    <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Personal Project, August 2022</i>
+                    </span>
+                  </div>
+                <p></p>
               <ul className="resume-list">
                   <li >
                     Wrote and deployed a smart contract in solidity to the blockchain and built a Web3 client app to allow interactions with the smart contract.
@@ -88,29 +150,23 @@ return (
                     Utilized Solidity, Replit, Ethereum, Ethereum test networks, Reactjsx
                   </li>
               </ul>
-
-                {/***** QA *****/}
-                <h3> <strong className="popOColor">Adjuster Assistant / QA Examiner</strong>, Vas Claim Adjusters <br/> <i>June 2020 – June 2022</i></h3>
-                <ul className="resume-list">
+              <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>
+                    <span style={{flex: 1, textAlign: "left", fontSize: "1.3em", fontWeight: "bold"}}>
+                      <span className="popOColor">Watson Assistant</span>
+                    </span>
+                    <span style={{flex: 1, textAlign: "right", fontSize: "1.1em", fontWeight: "normal"}}>
+                      <i>Personal Project, August 2022</i>
+                    </span>
+                  </div>
+                <p></p>
+              <ul className="resume-list">
                   <li >
-                      Used Xactanalysis/Xactimate software to review final reports for errors prior to submission.
+                    Built a Watson Assistant application that allows users to interact with a chatbot that can answer questions about the user's resume.
                   </li>
                   <li>
-                      Prepared, reviewed, and summarized declaration page and prior estimates to prepare inspector for inspection.
+                    Utilized IBM Watson Assistant, Node.js, Express.js, HTML/CSS, React.js
                   </li>
-                </ul>
-
-                {/***** QA - Evolv *****/}
-                <h3> <strong className="popOColor">QA Reviewer</strong>, Evolv Claim Solutions <br/> <i>June 2022 – Present</i></h3>
-                <ul className="resume-list">
-                  <li >
-                     Learned Symbility software to review and edit files to minimize errors and provide Quality assurance prior to generating final report packages to send to carriers.
-                  </li> 
-                  <li>
-                  Train and manage new hires, providing support during the onboarding process.
-                  </li>                  
-                </ul>                              
-
+              </ul>
               </Accordion.Body>
           </Accordion.Item>
 
@@ -120,7 +176,7 @@ return (
             <Accordion.Body>
               <p className="resume-list">
                 <strong className="popOColor">Programming Languages: </strong>
-                JavaScript, TypeScript, C++, Java, C#, Python, SQL, Solidity, HTML/CSS
+                JavaScript, TypeScript, C++, Java, C#, Python, SQL, Solidity, HTML/CSS, Pandas
                 <br/>
                 <strong className="popOColor">Frameworks & Tools: </strong>
                 React.js, Angular, .NET Core, Node.js, Electron.NET, Docker, SQLite, Git/GitHub
