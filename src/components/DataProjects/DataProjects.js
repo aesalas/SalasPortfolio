@@ -1,7 +1,7 @@
 
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import PPweb from "../../Assets/Projects/PPweb.png";
+import bookAnalysis from "../../Assets/Projects/bookAnalysis.png";
 
 
 
@@ -21,11 +21,10 @@ function DataProjects() {
           {/*PP project card*/}
           <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={PPweb}
-              title="TBD"
-              description="TBD"
-              demoLink="https://alexandrasalasdev.netlify.app/"
-              ghLink="https://github.com/aesalas/SalasPortfolio"
+              imgPath={bookAnalysis}
+              title="Book Analysis"
+              description="Analyzed a dataset of books to extract insights about genres, authors, and publication trends."
+              ghLink="https://github.com/aesalas/amazon-best-sellers-2023-2025-analysis"
             />
           </Col>
 
