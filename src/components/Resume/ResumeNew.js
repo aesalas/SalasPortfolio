@@ -16,7 +16,7 @@ import py from "../../Assets/Certs/python.png";
 import Certs from "./Certs";
 import introSQL from "../../Assets/Certs/IntroSQL.png";
 import EAJobSim from "../../Assets/Certs/EAJobSim.png";
-
+import dataFun from "../../Assets/Certs/dataFundamentalsBadge.png";
 
 function ResumeNew() {
 return (
@@ -288,6 +288,16 @@ return (
                   describing it to other stakeholders. Built a class diagram and created a header file in C++ with class 
                   definitions for each object. Patched a bugfix and optimized the EA Sports College Football codebase by 
                   implementing an improved data structure."
+                />
+              </div>
+              <div style={{ width: "500px"}}>
+                <Certs
+                  imgPath={dataFun}
+                  title="Data Fundamentals"
+                  description="IBM course gave knowledge of data analytics concepts, methodologies, and applications of 
+                  data science, and the tools and programming languages used in the data ecosystem. I gained a conceptual 
+                  understanding of how to clean, refine, and visualize data using IBM Watson Studio and became aware of the 
+                  job outlook in data, and familiarized myself with the skills required for success in various roles in the domain."
                 />
               </div>
               
